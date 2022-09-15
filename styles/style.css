@@ -88,7 +88,57 @@ img header{
     width: 25%
 }
 
-nav ul{
+.menu-items ul{
     flex-direction: column;
     display: none;
 }
+
+/*Menu movil desplegable*/
+
+.menu-mobile{
+    position: absolute;
+    background-color: var(--white);
+    min-width: 70%;
+    height: 100vh;
+    padding: 1.5em;
+    color: var(--curtx-blue);
+    
+}
+
+
+.menu-mobile img{
+    width: 5.5em;
+    height: 2.0em;
+}
+
+.lista ul{
+    list-style: none;
+    border-bottom: 0.2rem solid var(--secundary-blue);
+}
+
+.lista ul{
+    list-style: none;
+    border-bottom: 0.1rem solid var(--secundary-blue);
+    padding-bottom: 1.0em;
+    padding-top: 1.0em;
+}
+
+.lista li{
+    list-style: none;
+    padding: 0.5em;
+    font-size: 1.6rem;
+    padding: 0.3em  0 0.3em 0.5em;
+    font-style: normal;
+}
+
+.menu-mobile a{
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--curtx-blue);
+}
+
+
+.idiomas .lista{
+    border-bottom: 0.1rem solid var(--white) ;
+}
+
