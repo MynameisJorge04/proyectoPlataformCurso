@@ -16,13 +16,13 @@
     --white: #ffffff;
 }
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-html{
+html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
 }
@@ -32,9 +32,11 @@ html{
     display: flex;
 }
 
-/*Header*//*Posicionamiento*//*Estilos*/
+/*Header*/
+/*Posicionamiento*/
+/*Estilos*/
 
-header{
+header {
     position: relative;
     display: flex;
     justify-content: center;
@@ -46,99 +48,145 @@ header{
     max-height: 10vh;
 }
 
-.header-general{
+.header-general {
     width: 100%;
     display: flex;
 }
 
+.show_header{
+    opacity: 0.6;
+}
+
 /*Bloque logo*/
 
-.logo{
+.logo {
     width: 50%;
     align-self: center;
     padding: auto;
     margin-top: 1.0em;
 }
 
-img header{
+img header {
     width: 5.0em;
     height: 5.0em;
 }
 
+
 /*Bloque iconos de busqueda*/
 
- .nav-busqueda {
+.nav-busqueda {
     width: 25%;
     align-self: center;
     font-size: 0.8em;
 }
 
 /*Menu*/
-.icons{
+.icons {
     color: black;
     background: none;
     border: none;
     font-size: 2.0em;
     line-height: 3.0em;
-    padding:  0 0.6em;
+    padding: 0 0.6em;
     align-self: center;
 }
 
-.menu{
+
+
+.menu {
     width: 25%
 }
 
-.menu-items ul{
+.menu-items {
     flex-direction: column;
     display: none;
 }
 
 /*Menu movil desplegable*/
 
-.menu-mobile{
+.menu_mobile {
     position: absolute;
     background-color: var(--white);
     min-width: 70%;
     height: 100vh;
     padding: 1.5em;
     color: var(--curtx-blue);
-    
+    margin-left: -100%;
+    transition: all .4s;
+    margin-top: -6.0em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 
-.menu-mobile img{
+.show{
+    margin-left: 0;
+}
+
+.show_cerrar{
+    margin-left: -100%
+}
+
+
+.menu_mobile img {
     width: 5.5em;
     height: 2.0em;
 }
 
-.lista ul{
+.icon_cerrar {
+    color: black;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    line-height: 1.0em;
+    margin-left: 50%;
+}
+
+.lista ul {
     list-style: none;
     border-bottom: 0.2rem solid var(--secundary-blue);
 }
 
-.lista ul{
+.lista ul {
     list-style: none;
     border-bottom: 0.1rem solid var(--secundary-blue);
-    padding-bottom: 1.0em;
-    padding-top: 1.0em;
+    padding-bottom: 1.3em;
+    padding-top: 1.3em;
 }
 
-.lista li{
+.lista li {
     list-style: none;
-    padding: 0.5em;
     font-size: 1.6rem;
-    padding: 0.3em  0 0.3em 0.5em;
+    padding: 0.5em 0 0.5em 0.5em;
     font-style: normal;
 }
 
-.menu-mobile a{
+.menu_mobile a {
     text-decoration: none;
     background-color: transparent;
     color: var(--curtx-blue);
 }
 
+/*Bloque de idiomas*/
 
-.idiomas .lista{
-    border-bottom: 0.1rem solid var(--white) ;
+.idiomas ul {
+    border-bottom: 1.0rem solid var(--white);
 }
 
+.button-idioma {
+    display: flex;
+    text-decoration: none;
+    background-color: transparent;
+    border: 0.15rem solid black;
+}
+
+.button-idioma i {
+    color: black;
+    padding: 0.7em;
+    font-size: 1.2em;
+}
+
+.button-idioma p {
+    color: black;
+    padding: 0.7em;
+    font-size: 1.2em;
+}

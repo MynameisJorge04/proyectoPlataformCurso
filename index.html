@@ -16,15 +16,58 @@
         rel=“stylesheet”>
     <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/75a3b76030.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
+    
+    <!--Bloque barra lateral al apretar el menu-->
+
+    <header class="container" id="header-menu">
+
+        <div class="header-general">
+            <nav class="menu">
+                <span class="icons" id="btn_menu">
+                    <i class="fa fa-bars"></i>
+                </span>
+                <ul class="menu-items">
+                    <li><a href="">Cursos</a></li>
+                    <li> <a href="">Contacto</a></li>
+                    <li> <a href="">Centro de ayuda</a></li>
+                    <li><button class="icons">
+                            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="logo">
+                <img src="./assets/icons/logo-movil.png" alt="Logo de curtx">
+            </div>
+
+            <div class="nav-busqueda">
+                <button class="icons">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <button class="icons">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+        </div>
+        
+    </header>
 
     <!--Bloque barra lateral al apretar el menu-->
-    <nav class="menu-mobile">
+    <nav class="menu_mobile" >
         <div class="lista">
             <ul>
-                <li><img src="./assets/icons/curtx.png" alt=""></li>
+                <li>
+                    <img src="./assets/icons/curtx.png" alt="">
+                    <span class="icon_cerrar" id="btn_cerrar">
+                        <i class="fa-solid fa-xmark"></i>
+                    </span>
+                </li>
                 <li><a href="">Iniciar sesion</a></li>
                 <li><a href="">Registro</a></li>
             </ul>
@@ -54,42 +97,9 @@
         </div>
     </nav>
 
-    <!--Bloque barra lateral al apretar el menu
+    
 
-    <header class="container">
 
-        <div class="header-general">
-            <nav class="menu">
-                <button class="icons">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <ul class="menu-items">
-                    <li><a href="">Cursos</a></li>
-                    <li> <a href="">Contacto</a></li>
-                    <li> <a href="">Centro de ayuda</a></li>
-                    <li><button class="icons">
-                            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="logo">
-                <img src="./assets/icons/logo-movil.png" alt="Logo de curtx">
-            </div>
-
-            <div class="nav-busqueda">
-                <button class="icons">
-                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-                </button>
-
-                <button class="icons">
-                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-            </div>
-        </div>
-        -->
-    </header>
 </body>
-
+<script src="./scripts/menu.js"></script>
 </html>
