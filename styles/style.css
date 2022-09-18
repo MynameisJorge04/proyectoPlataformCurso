@@ -59,7 +59,7 @@ header {
 
 /*Bloque logo*/
 
-.logo {
+.logo_mobile {
     width: 50%;
     align-self: center;
     padding: auto;
@@ -74,10 +74,20 @@ img header {
 
 /*Bloque iconos de busqueda*/
 
-.nav-busqueda {
+.nav_busqueda {
     width: 25%;
     align-self: center;
     font-size: 0.8em;
+}
+
+.objetos_desktop {
+    display: none;
+}
+
+/*Bloque iconos de iniciar sesion*/
+
+.inicio_sesion {
+    display: none;
 }
 
 /*Menu*/
@@ -97,8 +107,7 @@ img header {
     width: 25%
 }
 
-.menu-items {
-    flex-direction: column;
+.menu_desktop {
     display: none;
 }
 
@@ -107,7 +116,7 @@ img header {
 .menu_mobile {
     position: absolute;
     background-color: var(--white);
-    min-width: 70%;
+    min-width: 60%;
     height: 100vh;
     padding: 1.5em;
     color: var(--curtx-blue);
@@ -115,6 +124,7 @@ img header {
     transition: all .4s;
     margin-top: -6.0em;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    max-width: 70%;
 }
 
 
@@ -138,7 +148,8 @@ img header {
     border: none;
     font-size: 1.5em;
     line-height: 1.0em;
-    margin-left: 50%;
+    margin-left: auto;
+    float: right;
 }
 
 .lista ul {

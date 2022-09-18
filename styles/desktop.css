@@ -1,0 +1,101 @@
+/*
+1.Posicionamiento
+2.Modelo caja (Box model)
+3.Tipografia
+4. Visuales
+5. Otros
+*/
+
+:root {
+    /*Colores*/
+    --curtx-blue: #028090;
+    --secundary-blue: #05668D;
+    --extra-color: #02C39A;
+    --secundary-extra: #00A896;
+    --parrafo-color: #F0F3BD;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+/*Header*/
+
+.button_menu{
+    display: none;
+}
+
+.menu_desktop{
+    display: flex;
+    height: 5vh;
+    padding: 1.0em;
+}
+
+.menu_items{
+    display: inline-block;
+    margin-top: 1.0em;
+}
+
+.menu_desktop img{
+    width: 10.0em;
+    height: 3.7em;
+}
+
+.menu_items li {
+    display: inline;
+    font-size: 1.5rem;
+    padding-left: 1.0em;
+}
+
+.menu_items li a{
+    font-size: 1.2rem;
+    text-align: center;
+    color: #201E1C;
+    text-decoration: none;
+
+}
+
+
+
+.logo_mobile{
+    display: none;
+}
+
+.objetos_desktop{
+    font-size: 1.5rem;
+}
+
+/*Bloque iconos de busqueda*/
+
+.nav_busqueda {
+    width: 50%;
+    font-size: 0.8em;
+}
+
+/*Bloque inciio de sesion*/
+
+.inicio_sesion {
+    display: flex;
+    width: 25%;
+}
+
+.objetos_desktop {
+    display: inline;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #201E1C;
+    text-decoration: none;
+}

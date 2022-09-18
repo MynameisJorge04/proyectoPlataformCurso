@@ -15,6 +15,8 @@
         href=“https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap”
         rel=“stylesheet”>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 800px)">
     <script src="https://kit.fontawesome.com/75a3b76030.js" crossorigin="anonymous"></script>
     
 </head>
@@ -27,33 +29,42 @@
 
         <div class="header-general">
             <nav class="menu">
-                <span class="icons" id="btn_menu">
+                <span class="icons button_menu" id="btn_menu">
                     <i class="fa fa-bars"></i>
                 </span>
-                <ul class="menu-items">
-                    <li><a href="">Cursos</a></li>
-                    <li> <a href="">Contacto</a></li>
-                    <li> <a href="">Centro de ayuda</a></li>
-                    <li><button class="icons">
-                            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </li>
-                </ul>
+
+                <div class="menu_desktop">
+                    <img src="./assets/icons/curtx.png" alt="Logo de curtx">
+                    <ul class="menu_items">
+                        <li><a href="">Cursos</a></li>
+                    </ul>
+                </div>
+                
             </nav>
 
-            <div class="logo">
+            <div class="logo_mobile">
                 <img src="./assets/icons/logo-movil.png" alt="Logo de curtx">
             </div>
 
-            <div class="nav-busqueda">
+            <div class="nav_busqueda">
                 <button class="icons">
                     <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                 </button>
+
+
+                <a href="" class="objetos_desktop">Curtx bussnies</a>
 
                 <button class="icons">
                     <i class="fa-sharp fa-solid fa-cart-shopping"></i>
                 </button>
             </div>
+
+            <div class="inicio_sesion">
+                <a href="">Iniciar sesion</a>
+
+                <a href="">Registro</a>
+            </div>
+
         </div>
         
     </header>
