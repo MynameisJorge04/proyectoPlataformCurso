@@ -34,24 +34,25 @@ html {
 
 /*Header*/
 
-.button_menu{
+.button_menu_mobile{
     display: none;
 }
 
 .menu_desktop{
     display: flex;
     height: 5vh;
-    padding: 1.0em;
+    padding: 1.5em;
 }
 
 .menu_items{
     display: inline-block;
-    margin-top: 1.0em;
+    padding-top: 0.8em;
 }
 
 .menu_desktop img{
     width: 10.0em;
     height: 3.7em;
+
 }
 
 .menu_items li {
@@ -61,7 +62,7 @@ html {
 }
 
 .menu_items li a{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
     color: #201E1C;
     text-decoration: none;
@@ -69,28 +70,19 @@ html {
 }
 
 
+.menu{
+    flex-grow: 1;
+}
+
+
+.nav_busqueda{
+    display: none;
+}
 
 .logo_mobile{
     display: none;
 }
 
-.objetos_desktop{
-    font-size: 1.5rem;
-}
-
-/*Bloque iconos de busqueda*/
-
-.nav_busqueda {
-    width: 50%;
-    font-size: 0.8em;
-}
-
-/*Bloque inciio de sesion*/
-
-.inicio_sesion {
-    display: flex;
-    width: 25%;
-}
 
 .objetos_desktop {
     display: inline;
@@ -98,4 +90,122 @@ html {
     text-align: center;
     color: #201E1C;
     text-decoration: none;
+}
+
+/*Bloque incio de sesion*/
+
+.inicio_sesion_desktop {
+    display: block;
+    flex-grow: 1;
+    margin-top: 2.0em;
+}
+
+.inicio_sesion_desktop a{
+    border: 1px solid #1c1d1f;
+    margin: 0 1.2rem;
+    padding: 0.8em 0.6em;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+    letter-spacing: -.02rem;
+    line-height: 1.2;
+    
+}
+
+/*Bloque de academia*/
+
+.academia_desktop {
+    display: block;
+    padding-top: 2.1em;
+    flex-grow: 1;
+}
+
+.academia_desktop a{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #201E1C;
+    text-decoration: none;
+}
+
+/*Bloque de shopping*/
+
+.nav_tienda_desktop {
+    display: block;
+    flex-grow: 1;
+}
+
+/*Bloque de busqueda*/
+
+.nav_busqueda_desktop {
+    display: block;
+    flex-grow: 999;
+    border: 1px solid #1c1d1f;
+    margin: 0 1.2rem;
+    height: 4.8rem;
+    border-radius: 99em;
+    background-color: #f7f9fa;
+    margin-top: 0.7em;
+
+}
+
+.form_busqueda{
+    display: flex;
+    align-items: center;
+    padding: 0 2.4rem 0 0;
+    margin-top: -0.7em;
+}
+
+.nav_busqueda_desktop input{
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    -webkit-appearance: none;
+    border-radius: 0;
+    height: 3.4rem;
+}
+
+
+
+
+/*Bloque de idioma*/
+
+.idioma_desktop {
+    display: block;
+    flex-grow: 1;
+
+}
+
+/*Bloque de registro*/
+
+.registro_desktop{
+    display: block;
+    flex-grow: 1;
+    margin-top: 2.0em;
+}
+
+.registro_desktop a{
+    border: 1px solid #1c1d1f;
+    margin: 0 1.2rem;
+    padding: 0.5em 1.2em;
+    background-color: black;
+    font-size: 1.5em;
+    color: var(--white);
+    text-decoration: none;
+    
+}
+
+
+
+
+@media (max-width: 1700px) {
+
+    /*Bloque de academia*/
+
+    .academia_desktop {
+        display: none;
+    }
+
+
+
 }

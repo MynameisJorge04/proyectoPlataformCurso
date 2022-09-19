@@ -80,13 +80,38 @@ img header {
     font-size: 0.8em;
 }
 
-.objetos_desktop {
+
+/*Bloque iconos de desktop*/
+
+.inicio_sesion_desktop {
     display: none;
 }
 
-/*Bloque iconos de iniciar sesion*/
+.registro_desktop{
+    display: none;
+}
 
-.inicio_sesion {
+.academia_desktop{
+    display: none;
+}
+
+.idioma_desktop{
+    display: none;
+}
+
+.menu_desktop {
+    display: none;
+}
+
+.nav_busqueda_desktop {
+    display: none;
+}
+
+.nav_tienda_desktop{
+    display: none;
+}
+
+.objetos_desktop {
     display: none;
 }
 
@@ -101,14 +126,8 @@ img header {
     align-self: center;
 }
 
-
-
-.menu {
-    width: 25%
-}
-
-.menu_desktop {
-    display: none;
+.button_menu_mobile{
+    width: 25%;
 }
 
 /*Menu movil desplegable*/
