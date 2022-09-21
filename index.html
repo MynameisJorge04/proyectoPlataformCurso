@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./styles/tablet.css" media="screen and (min-width: 600px)">
     <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 800px)">
     <script src="https://kit.fontawesome.com/75a3b76030.js" crossorigin="anonymous"></script>
-
+    <script src="./scripts/menu.js" defer></script>
 </head>
 
 <body>
@@ -33,29 +33,29 @@
                         <i class="fa-solid fa-xmark"></i>
                     </span>
                 </li>
-                <li><a href="">Iniciar sesion</a></li>
-                <li><a href="">Registro</a></li>
+                <li><a href="./login.html">Iniciar sesion</a></li>
+                <li><a href="./registro.html">Registro</a></li>
             </ul>
         </div>
         <div class="lista">
             <ul>
-                <li><a href="">Cursos</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Centro de ayuda</a></li>
+                <li><a href="./cursos.html">Cursos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./error.html">Centro de ayuda</a></li>
             </ul>
         </div>
         <div class="lista idiomas">
             <ul>
                 <li><strong>Temas</strong></li>
-                <li><a href="">Ciencia de datos</a></li>
-                <li><a href="">Negocios</a></li>
-                <li><a href="">Salud</a></li>
-                <li><a href="">Desarrollo personal</a></li>
-                <li><a href="">Ciencias sociales</a></li>
-                <li><a href="">Tecnologias de la informacion</a></li>
+                <li><a href="./error.html">Ciencia de datos</a></li>
+                <li><a href="./error.html">Negocios</a></li>
+                <li><a href="./error.html">Salud</a></li>
+                <li><a href="./error.html">Desarrollo personal</a></li>
+                <li><a href="./error.html">Ciencias sociales</a></li>
+                <li><a href="./error.html">Tecnologias de la informacion</a></li>
                 <li><button class="button-idioma">
                         <i class="fa-solid fa-language"></i>
-                        <p>Español</p>
+                        Español
                     </button>
                 </li>
             </ul>
@@ -74,18 +74,18 @@
                 </span>
             </div>
 
+            <!--Bloque de navegacion desktop-->
             <nav class="menu">
-
-
                 <div class="menu_desktop">
                     <img src="./assets/icons/curtx.png" alt="Logo de curtx">
                     <ul class="menu_items">
-                        <li><a href="">Cursos</a></li>
+                        <li><a href="./cursos.html">Cursos</a></li>
                     </ul>
                 </div>
 
             </nav>
 
+            <!--Bloque de logo-->
             <div class="logo_mobile">
                 <img src="./assets/icons/logo-movil.png" alt="Logo de curtx">
             </div>
@@ -100,8 +100,9 @@
                 </button>
             </div>
 
+            <!--Bloque de busqueda-->
             <div class="nav_busqueda_desktop">
-                <form action="" class="form_busqueda">
+                <form class="form_busqueda">
                     <button class="icons">
                         <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                     </button>
@@ -110,6 +111,7 @@
 
             </div>
 
+            <!--Bloque general de login,registro y carrito compra-->
             <div class="academia_desktop">
                 <a href="">Academia Curtx</a>
             </div>
@@ -121,11 +123,11 @@
             </div>
 
             <div class="inicio_sesion_desktop">
-                <a href="">Iniciar sesion</a>
+                <a href="./login.html">Iniciar sesion</a>
             </div>
 
             <div class="registro_desktop">
-                <a href="">Registro</a>
+                <a href="./registro.html">Registro</a>
             </div>
 
             <div class="idioma_desktop">
@@ -139,9 +141,10 @@
     </header>
 
 
-
+    <!--Contenido principal-->
     <main class="" id="main">
 
+        <!--Seccion de titulo principal-->
         <section class="title">
             <img src="./assets/icons/Curtx-blanco.png" alt="">
             <div class="title--container">
@@ -151,11 +154,12 @@
                 <p>Aprovecha el potencial de tu
                     equipo y elevalo al siguiente nivel
                 </p>
-                <a href="" class="title--unete--button">Unete de forma gratuita</a>
-                <a href="" class="title--button">Mas populares <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="./registro.html" class="title--unete--button">Unete de forma gratuita</a>
+                <a href="./error.html" class="title--button">Mas populares <i class="fa-solid fa-chevron-down"></i></a>
             </div>
         </section>
 
+        <!--Seccion de aprendizaje-->
         <section class="aprendizaje">
             <div class="aprendizaje--container">
                 <h2>Un aprendizaje interesante</h2>
@@ -164,7 +168,7 @@
                 <img src="./assets/imgs/imagen-slide1.png" alt="">
 
                 <div class="busqueda_aprendizaje_bloque">
-                    <form action="" class="form_busqueda_aprendizaje">
+                    <form class="form_busqueda_aprendizaje">
                         <button class="icons">
                             <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                         </button>
@@ -175,6 +179,7 @@
             </div>
         </section>
 
+        <!--Seccion cursos en pagina de inicio-->
         <section class="cursos_home">
             <div class="container--general--cursos">
                 <h2>Cursos online </h2>
@@ -183,12 +188,11 @@
                     descubre todos los secretos del sector.
                 </h3>
                 <div class="container-cursos wrap">
+
                     <!--Contendeor de cada carta curso-->
-
                     <div class="card--curso">
-
                         <div class="card--curso--top">
-                            <a href=""><img src="./assets/imgs/imagen-c++.png" alt="Iamgen curso1"></a>
+                            <a href="./error.html"><img src="./assets/imgs/imagen-c++.png" alt="Iamgen curso1"></a>
                             <div class="card--curso--body">
                                 <h2>Aprende Programación en C++</h2>
                                 <p>Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
@@ -209,14 +213,55 @@
                             </div>
 
                             <div class="compra_button_cursos">
-                                <form action="" class="form_compra_cursos">
+                                <form class="form_compra_cursos">
                                     <button class="compra_curso_carrito_button">
                                         <span><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
                                         <span>
-                                            <p>Comprar</p>
+                                            Comprar
                                         </span>
                                         <span>
-                                            <p>$299 MXN</p>
+                                            $299 MXN
+                                        </span>
+                                    </button>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card--curso">
+
+                        <div class="card--curso--top">
+                            <a href="./error.html"><img src="./assets/imgs/imagen-c++.png" alt="Iamgen curso1"></a>
+                            <div class="card--curso--body">
+                                <h2>Aprende Programación en C++</h2>
+                                <p>Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
+                                    las bases hasta lo avanzado en C++
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card--curso--bottom">
+                            <div class="precio--descuento--curso">
+                                <div class="price_descount">
+                                    <span>66% Dto.</span>
+                                </div>
+
+                                <div class="price_old">
+                                    <span>$999 MXN</span>
+                                </div>
+                            </div>
+
+                            <div class="compra_button_cursos">
+                                <form class="form_compra_cursos">
+                                    <button class="compra_curso_carrito_button">
+                                        <span><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                                        <span>
+                                            Comprar
+                                        </span>
+                                        <span>
+                                            $299 MXN
                                         </span>
                                     </button>
                                 </form>
@@ -230,7 +275,7 @@
                     <div class="card--curso">
 
                         <div class="card--curso--top">
-                            <a href=""><img src="./assets/imgs/imagen-c++.png" alt="Iamgen curso1"></a>
+                            <a href="./error.html"><img src="./assets/imgs/imagen-c++.png" alt="Iamgen curso1"></a>
                             <div class="card--curso--body">
                                 <h2>Aprende Programación en C++</h2>
                                 <p>Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
@@ -251,54 +296,14 @@
                             </div>
 
                             <div class="compra_button_cursos">
-                                <form action="" class="form_compra_cursos">
+                                <form class="form_compra_cursos">
                                     <button class="compra_curso_carrito_button">
                                         <span><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
                                         <span>
-                                            <p>Comprar</p>
+                                            Comprar
                                         </span>
                                         <span>
-                                            <p>$299 MXN</p>
-                                        </span>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="card--curso">
-
-                        <div class="card--curso--top">
-                            <a href=""><img src="./assets/imgs/imagen-c++.png" alt="Iamgen curso1"></a>
-                            <div class="card--curso--body">
-                                <h2>Aprende Programación en C++</h2>
-                                <p>Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
-                                    las bases hasta lo avanzado en C++
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card--curso--bottom">
-                            <div class="precio--descuento--curso">
-                                <div class="price_descount">
-                                    <span>66% Dto.</span>
-                                </div>
-
-                                <div class="price_old">
-                                    <span>$999 MXN</span>
-                                </div>
-                            </div>
-
-                            <div class="compra_button_cursos">
-                                <form action="" class="form_compra_cursos">
-                                    <button class="compra_curso_carrito_button">
-                                        <span><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
-                                        <span>
-                                            <p>Comprar</p>
-                                        </span>
-                                        <span>
-                                            <p>$299 MXN</p>
+                                            $299 MXN
                                         </span>
                                     </button>
                                 </form>
@@ -309,7 +314,7 @@
                     <div class="card--curso">
 
                         <div class="card--curso--top">
-                            <a href=""><img src="./assets/imgs/imagen-c++.png" alt="Iamgen curso1"></a>
+                            <a href="./error.html"><img src="./assets/imgs/imagen-c++.png" alt="Iamgen curso1"></a>
                             <div class="card--curso--body">
                                 <h2>Aprende Programación en C++</h2>
                                 <p>Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
@@ -330,14 +335,14 @@
                             </div>
 
                             <div class="compra_button_cursos">
-                                <form action="" class="form_compra_cursos">
+                                <form class="form_compra_cursos">
                                     <button class="compra_curso_carrito_button">
                                         <span><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
                                         <span>
-                                            <p>Comprar</p>
+                                            Comprar
                                         </span>
                                         <span>
-                                            <p>$299 MXN</p>
+                                            $299 MXN
                                         </span>
                                     </button>
                                 </form>
@@ -348,57 +353,126 @@
             </div>
         </section>
 
+        <!--Seccion de imagenes de categorias de curso-->
         <section class="cursos--diferentes">
             <div class="imagenes--cursos--container--general">
                 <h2>Contamos con diferentes cursos </h2>
                 <div class="container--images--cursos">
                     <div class="imagen--cursos">
-                        <img src="./assets/imgs/adobe-illustrator.png" alt="">
+                        <img src="./assets/imgs/adobe-illustrator.png" alt="Curso adobe-illustrator">
                     </div>
                     <div class="imagen--cursos">
-                        <img src="./assets/imgs/Adobe_Photoshop.png" alt="">
+                        <img src="./assets/imgs/Adobe_Photoshop.png" alt="Curso Adobe_Photoshop">
                     </div>
                     <div class="imagen--cursos">
-                        <img src="./assets/imgs/Microsoft_Excel.png" alt="">
+                        <img src="./assets/imgs/Microsoft_Excel.png" alt="Curso excel">
                     </div>
                     <div class="imagen--cursos">
-                        <img src="./assets/imgs/python.png" alt="">
+                        <img src="./assets/imgs/python.png" alt="Curso phyton">
                     </div>
                     <div class="imagen--cursos">
-                        <img src="./assets/imgs/Ableton.png" alt="">
+                        <img src="./assets/imgs/Ableton.png" alt="Curso Ableton">
                     </div>
                     <div class="imagen--cursos">
-                        <img src="./assets/imgs/revit.png" alt="">
+                        <img src="./assets/imgs/revit.png" alt="Curso revit">
                     </div>
                     <div class="imagen--cursos">
-                        <img src="./assets/imgs/protools.png" alt="">
+                        <img src="./assets/imgs/protools.png" alt="Curso protools">
                     </div>
                     <div class="imagen--cursos">
-                        <img src="./assets/imgs/HTML.png" alt="">
+                        <img src="./assets/imgs/HTML.png" alt="Curso HTML">
                     </div>
                 </div>
             </div>
         </section>
 
+        <!--Seccion de categorias principales-->
         <section class="categorias--principales">
             <div class="categorias--principales--general">
-            <h2>Categorias principales</h2>
-            <div class="container--categorias">
-                <a href="" class="boton--categoria column-5">Cienca de datos</a>
-                <a href="" class="boton--categoria column-5">Negocios</a>
-                <a href="" class="boton--categoria column-3">Salud</a>
-                <a href="" class="boton--categoria column-7">Desarollo personal</a>
-                <a href="" class="boton--categoria column-10">Ciencas sociales</a>
-                <a href="" class="boton--categoria column-10">Tecnologias de la informacion</a>
-                <a href="" class="boton--categoria column-3">Musica</a>
-                <a href="" class="boton--categoria column-7">Informatica y software</a>
+                <h2>Categorias principales</h2>
+                <div class="container--categorias">
+                    <a href="./error.html" class="boton--categoria column-5">Cienca de datos</a>
+                    <a href="./error.html" class="boton--categoria column-5">Negocios</a>
+                    <a href="./error.html" class="boton--categoria column-3">Salud</a>
+                    <a href="./error.html" class="boton--categoria column-7">Desarollo personal</a>
+                    <a href="./error.html" class="boton--categoria column-10">Ciencas sociales</a>
+                    <a href="./error.html" class="boton--categoria column-10">Tecnologias de la informacion</a>
+                    <a href="./error.html" class="boton--categoria column-3">Musica</a>
+                    <a href="./error.html" class="boton--categoria column-7">Informatica y software</a>
+                </div>
             </div>
-             </div>
         </section>
     </main>
 
+    <!--Pie de pagina general-->
+    <footer>
 
+        <!--Pie de pagina mobile-->
+        <div class="footer--general--mobile">
+            <div class="footer--button--general--idioma">
+                <button class="button-idioma--footer">
+                    <i class="fa-solid fa-language"></i>
+                    Español
+                </button>
+            </div>
+            <div class="redes--sociales--footer">
+                <div class="red--social--footer">
+                    <a href="./error.html"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="red--social--footer">
+                    <a href="./error.html"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="red--social--footer">
+                    <a href="./error.html"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer--temas-privacidad">
+                <a href="./error.html">Cookies |</a>
+                <a href="./error.html"> Politica de privacidad </a>
+                <a href="./error.html">| Aviso legal</a>
+            </div>
+            <p>@ 2022 Curtx, Inc</p>
+        </div>
+
+        <!--Pie de pagina desktop-->
+        <div class="footer--general--desktop">
+            <div class="lista--footer--desktop">
+                <ul>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./error.html">Cursos</a></li>
+                    <li><a href="./error.html">Centro de ayuda</a></li>
+                </ul>
+            </div>
+            <div class="lista--footer--desktop">
+                <ul>
+                    <li><a href="./error.html">Linkedin</a></li>
+                    <li><a href="./error.html">Facebook</a></li>
+                    <li><a href="./error.html">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="lista--footer--desktop">
+                <ul>
+                    <li><a href="./error.html">Linkedin</a></li>
+                    <li><a href="./error.html">Facebook</a></li>
+                    <li><a href="./error.html">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="lista--footer--desktop">
+                <ul>
+                    <li><a href="./error.html">Linkedin</a></li>
+                    <li><a href="./error.html">Facebook</a></li>
+                    <li><a href="./error.html">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer--button--general--idioma--desktop">
+                <button class="button-idioma--footer">
+                    <i class="fa-solid fa-language"></i>
+                    Español
+                </button>
+            </div>
+
+        </div>
+    </footer>
 </body>
-<script src="./scripts/menu.js"></script>
 
 </html>

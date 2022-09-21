@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./styles/tablet.css" media="screen and (min-width: 600px)">
     <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 800px)">
     <script src="https://kit.fontawesome.com/75a3b76030.js" crossorigin="anonymous"></script>
-
+    <script src="./scripts/menu.js" defer></script>
 </head>
 
 <body>
@@ -33,29 +33,29 @@
                         <i class="fa-solid fa-xmark"></i>
                     </span>
                 </li>
-                <li><a href="">Iniciar sesion</a></li>
-                <li><a href="">Registro</a></li>
+                <li><a href="./login.html">Iniciar sesion</a></li>
+                <li><a href="./registro.html">Registro</a></li>
             </ul>
         </div>
         <div class="lista">
             <ul>
-                <li><a href="">Cursos</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Centro de ayuda</a></li>
+                <li><a href="./cursos.html">Cursos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./error.html">Centro de ayuda</a></li>
             </ul>
         </div>
         <div class="lista idiomas">
             <ul>
                 <li><strong>Temas</strong></li>
-                <li><a href="">Ciencia de datos</a></li>
-                <li><a href="">Negocios</a></li>
-                <li><a href="">Salud</a></li>
-                <li><a href="">Desarrollo personal</a></li>
-                <li><a href="">Ciencias sociales</a></li>
-                <li><a href="">Tecnologias de la informacion</a></li>
+                <li><a href="./error.html">Ciencia de datos</a></li>
+                <li><a href="./error.html">Negocios</a></li>
+                <li><a href="./error.html">Salud</a></li>
+                <li><a href="./error.html">Desarrollo personal</a></li>
+                <li><a href="./error.html">Ciencias sociales</a></li>
+                <li><a href="./error.html">Tecnologias de la informacion</a></li>
                 <li><button class="button-idioma">
                         <i class="fa-solid fa-language"></i>
-                        <p>Español</p>
+                        Español
                     </button>
                 </li>
             </ul>
@@ -74,18 +74,18 @@
                 </span>
             </div>
 
+            <!--Bloque de navegacion desktop-->
             <nav class="menu">
-
-
                 <div class="menu_desktop">
                     <img src="./assets/icons/curtx.png" alt="Logo de curtx">
                     <ul class="menu_items">
-                        <li><a href="">Cursos</a></li>
+                        <li><a href="./cursos.html">Cursos</a></li>
                     </ul>
                 </div>
 
             </nav>
 
+            <!--Bloque de logo-->
             <div class="logo_mobile">
                 <img src="./assets/icons/logo-movil.png" alt="Logo de curtx">
             </div>
@@ -100,8 +100,9 @@
                 </button>
             </div>
 
+            <!--Bloque de busqueda-->
             <div class="nav_busqueda_desktop">
-                <form action="" class="form_busqueda">
+                <form class="form_busqueda">
                     <button class="icons">
                         <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                     </button>
@@ -110,6 +111,7 @@
 
             </div>
 
+            <!--Bloque general de login,registro y carrito compra-->
             <div class="academia_desktop">
                 <a href="">Academia Curtx</a>
             </div>
@@ -121,11 +123,11 @@
             </div>
 
             <div class="inicio_sesion_desktop">
-                <a href="">Iniciar sesion</a>
+                <a href="./login.html">Iniciar sesion</a>
             </div>
 
             <div class="registro_desktop">
-                <a href="">Registro</a>
+                <a href="./registro.html">Registro</a>
             </div>
 
             <div class="idioma_desktop">
@@ -138,23 +140,24 @@
 
     </header>
 
-
-
+    <!--Contenido principal-->
     <main class="" id="main">
         <section class="contactame--nosotros">
             <h2>Contactate con nosotros</h2>
             <div class="container--contacto">
-                <form action="" class="form--contacto">
+
+                <!--Formulario de contacto-->
+                <form class="form--contacto">
                     <div class="container--column--input">
                         <span>Nombre (s)</span>
                         <input type="text">
                     </div>
-    
+
                     <div class="container--column--input">
                         <span>Apellidos</span>
                         <input type="text">
                     </div>
-    
+
                     <div class="container--column--input">
                         <span>Correo electronico</span>
                         <input type="text">
@@ -163,17 +166,17 @@
                         <span>Telefono </span>
                         <input type="text">
                     </div>
-    
+
                     <div class="container--column--input">
                         <span>Mensaje </span>
-                        <textarea type="text"></textarea>
+                        <textarea></textarea>
                     </div>
-    
+
                     <div class="container--checkbox">
                         <input type="checkbox">
                         <span>He leído y acepto el <a href="">Aviso de Privacidad</a></span>
                     </div>
-    
+
                     <div class="container--column--input--right">
                         <button class="button--contacto">Enviar</button>
                     </div>
@@ -183,9 +186,77 @@
                 servicio para poder mejorar cada día.</p>
         </section>
     </main>
-    
-    
-    </body>
-    <script src="./scripts/menu.js"></script>
-    
-    </html>
+
+    <!--Pie de pagina general-->
+    <footer>
+
+        <!--Pie de pagina mobile-->
+        <div class="footer--general--mobile">
+            <div class="footer--button--general--idioma">
+                <button class="button-idioma--footer">
+                    <i class="fa-solid fa-language"></i>
+                    Español
+                </button>
+            </div>
+            <div class="redes--sociales--footer">
+                <div class="red--social--footer">
+                    <a href="./error.html"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="red--social--footer">
+                    <a href="./error.html"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="red--social--footer">
+                    <a href="./error.html"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer--temas-privacidad">
+                <a href="./error.html">Cookies |</a>
+                <a href="./error.html"> Politica de privacidad </a>
+                <a href="./error.html">| Aviso legal</a>
+            </div>
+            <p>@ 2022 Curtx, Inc</p>
+        </div>
+
+        <!--Pie de pagina desktop-->
+        <div class="footer--general--desktop">
+            <div class="lista--footer--desktop">
+                <ul>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./error.html">Cursos</a></li>
+                    <li><a href="./error.html">Centro de ayuda</a></li>
+                </ul>
+            </div>
+            <div class="lista--footer--desktop">
+                <ul>
+                    <li><a href="./error.html">Linkedin</a></li>
+                    <li><a href="./error.html">Facebook</a></li>
+                    <li><a href="./error.html">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="lista--footer--desktop">
+                <ul>
+                    <li><a href="./error.html">Linkedin</a></li>
+                    <li><a href="./error.html">Facebook</a></li>
+                    <li><a href="./error.html">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="lista--footer--desktop">
+                <ul>
+                    <li><a href="./error.html">Linkedin</a></li>
+                    <li><a href="./error.html">Facebook</a></li>
+                    <li><a href="./error.html">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer--button--general--idioma--desktop">
+                <button class="button-idioma--footer">
+                    <i class="fa-solid fa-language"></i>
+                    Español
+                </button>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>

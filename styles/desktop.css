@@ -297,6 +297,48 @@ html {
     margin: 1em;
 }
 
+/*Footer*/
+.footer--general--mobile{
+    display: none;
+}
+
+.footer--general--desktop{
+    display: flex;
+}
+
+.lista--footer--desktop{
+    width: 25%;
+}
+
+.lista--footer--desktop ul{
+    list-style: none;
+}
+
+.lista--footer--desktop li{
+    font-size: 1.6rem;
+    padding: 0.5em 0 0.5em 0.5em;
+    font-style: normal;
+    
+}
+
+.lista--footer--desktop a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--white);
+}
+
+/*Login*/
+
+.contenedor_contenido{
+    height: 80vh;
+  }
+
+
+/*registro*/
+
+.contenedor_contenido1{
+    height: 80vh;
+  }
 
 @media (max-width: 1700px) {
 
