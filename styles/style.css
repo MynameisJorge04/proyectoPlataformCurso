@@ -225,7 +225,8 @@ img header {
     font-size: 1.2em;
 }
 
-/*seccion de incio*/
+/*Pagina home*/
+/*Seccion de title - Pagina home*/
 
 .title {
     position: relative;
@@ -313,7 +314,7 @@ img header {
 .aprendizaje--container{
     width: 80%;
     min-width: 28.8em;
-    max-width: 100em;
+   
     height: auto;
     margin-top: 2em;
     text-align: center;
@@ -384,6 +385,7 @@ img header {
     height: auto;
     text-align: left;
     padding: 1em;
+    
     background: linear-gradient(180deg, #028090 46.88%, #05668D 97.4%);
 }
 
@@ -415,6 +417,8 @@ img header {
     min-width: 32em;
     height: auto;
     padding: 2em;
+    max-width: 124em;
+    align-self: center;
 }
 
 /*Bloque de cursos card*/
@@ -502,4 +506,172 @@ img header {
     font-size: 1.5rem;
     padding-left: 0.5em;
     color: var(--white);
+}
+
+/*Cursos posibles imagenes - Seccion imegenes curso*/
+
+.cursos--diferentes{
+    position: relative;
+    width: 100%;
+    min-width: 32em;
+    height: auto;
+    padding: 2em;
+    background-color: #EFEFEF;
+    text-align: center;
+    
+}
+
+.cursos--diferentes h2{
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 3.4rem;
+    color: #201E1C;
+    padding-top: 0.5em;
+}
+
+.container--images--cursos{
+    padding: 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100em;
+}
+
+.imagen--cursos{
+    padding: 0.5em;
+    width: 25%;
+    justify-content: center;
+    align-self: center;
+    
+}
+
+.imagen--cursos img{
+    width: 90%;
+    height: auto;
+}
+
+/*Cursos categorias principales - Seccion categorias principales*/
+
+.categorias--principales{
+    position: relative;
+    width: 100%;
+    min-width: 32em;
+    height: auto;
+    padding: 2em;
+}
+
+.categorias--principales h2{
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.6em;
+    color:#201E1C;
+}
+
+.container--categorias{
+    display: flex;
+    width: 100%;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+
+.container--categorias a{
+    border-radius: 3em;
+    background-color: #ffffff;
+    border: 0.1em solid black ;
+    color: black;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+    padding: 1em;
+    margin: 0.3em;
+    height: auto;
+}
+
+/*Botones a*/
+
+.container--categorias a{
+    border-radius: 3em;
+    background-color: #ffffff;
+    border: 0.1em solid black ;
+    color: black;
+    font-size: 1.6em;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+    padding: 1em;
+    margin: 0.3em;
+}
+
+/*Columnas grid de a*/
+
+.container--categorias .column-5{
+    width: 45%;
+}
+
+.container--categorias .column-3{
+    width: 25%;
+}
+
+.container--categorias .column-7{
+    width: 65%;
+}
+
+.container--categorias .column-10{
+    width: 95%;
+}
+
+/*Contacto - Pagina*/
+
+.contactame--nosotros{
+    position: relative;
+    width: 100%;
+    min-width: 32em;
+    height: auto;
+    padding: 2em;
+}
+
+.contactame--nosotros h2{
+    font-size: 2.8rem;
+    font-weight: 100;
+    line-height: 3.4rem;
+    color: #201E1C;
+    margin-bottom: em;
+}
+
+.container--contacto{
+    display: flex;
+    width: 95%;
+    text-align: left;
+}
+
+/*Contacto form - Pagina Contacto*/
+.container--contacto form{
+    width: 100%;
+    padding: 1em;
+}
+
+.container--column--input{
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 1em 0;
+}
+
+.container--column--input input{
+    width: 100%;
+    display: block;
+    height: 3em;
+}
+
+.container--column--input textarea{
+    display: block;
+    max-width: 100%;
+    max-height: 5em;
+    width: 100%;
+    height: 5em;
+}
+
+.container--column--input span{
+    font-size: 1.2em;
+    line-height: 2.4em;
 }
