@@ -165,9 +165,6 @@ html {
     height: 3.4rem;
 }
 
-
-
-
 /*Bloque de idioma*/
 
 .idioma_desktop {
@@ -195,6 +192,31 @@ html {
     
 }
 
+
+/*Bloque title - Pagina home*/
+
+.title {
+    height: 60.4em;
+}
+
+.title--container .title--button{
+    top: 37em;
+}
+
+.title--container .title--unete--button{
+    display: block;
+    margin-top: 3em;
+    padding: 0.8em;
+    background-color: transparent;
+    border: 0.1em solid var(--white);
+    width: 18.5em;
+    border-radius: 222em;
+    font-size: 1.5rem;
+    color: var(--white);
+    text-decoration: none;
+    margin-left: calc(50% - 9.6em);
+}
+
 /*Bloque de cursos - Seccion cursos*/
 
 .container-cursos{
@@ -204,6 +226,59 @@ html {
     grid-row-gap: 20px;
 }
 
+.cursos_home{
+    
+    background: var(--white);
+    justify-content: center;
+    width: 100%;
+}
+
+.cursos_home h2{
+    color: #000000;
+}
+
+.cursos_home h3{
+    color: #000000;
+}
+
+.cursos_home hr{
+    display: none;
+}
+
+.container--general--cursos{
+    align-self: center;
+}
+
+
+/*Bloque de imagenes - Seccion imagenes*/
+
+.cursos--diferentes{
+    display: flex;
+    justify-content: center;
+    
+}
+
+/*Categorias principales - Pagina categorias*/
+
+.categorias--principales{
+    display: flex;
+    justify-content: center;
+}
+
+/*Categorias principales - Pagina cursos*/
+
+.cursos--container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.cursos--selectbox--container{
+    align-self: center;
+}
+
+
 
 /*Bloque de cursos card*/
 
@@ -211,6 +286,16 @@ html {
     width: 100%;
 }
 
+/*Contacto - Pagina*/
+
+.button--contacto{  
+    width: 25%;
+}
+
+.container--column--input--right{
+    text-align: left;
+    margin: 1em;
+}
 
 
 @media (max-width: 1700px) {

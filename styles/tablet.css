@@ -47,7 +47,17 @@ html {
 
 .card--curso{
     width: 100%;
+}
 
+/*Contacto - Pagina*/
+
+.button--contacto{  
+    width: 80%;
+}
+
+.container--column--input--right{
+    text-align: center;
+    margin: 1em;
 }
 
 

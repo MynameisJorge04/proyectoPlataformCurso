@@ -46,6 +46,7 @@ header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
     max-height: 10vh;
+    z-index: 1;
 }
 
 .header-general {
@@ -147,7 +148,7 @@ img header {
     transition: all .4s;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     max-width: 70%;
-    z-index: 1;
+    z-index: 2;
 }
 
 
@@ -292,6 +293,10 @@ img header {
     color: black;
 }
 
+.title--container .title--button i{
+    margin-left: 2em;
+}
+
 .title--container .title--unete--button{
     display: none;
 }
@@ -313,8 +318,7 @@ img header {
 
 .aprendizaje--container{
     width: 80%;
-    min-width: 28.8em;
-   
+    max-width: 90em;
     height: auto;
     margin-top: 2em;
     text-align: center;
@@ -508,7 +512,7 @@ img header {
     color: var(--white);
 }
 
-<<<<<<< HEAD
+
 /*Cursos posibles imagenes - Seccion imegenes curso*/
 
 .cursos--diferentes{
@@ -520,6 +524,12 @@ img header {
     background-color: #EFEFEF;
     text-align: center;
     
+}
+
+.imagenes--cursos--container--general{
+    width: 100%;
+    align-self: center;
+    max-width: 110em;
 }
 
 .cursos--diferentes h2{
@@ -534,7 +544,6 @@ img header {
     padding: 2.5em;
     display: flex;
     flex-wrap: wrap;
-    max-width: 100em;
 }
 
 .imagen--cursos{
@@ -558,6 +567,12 @@ img header {
     min-width: 32em;
     height: auto;
     padding: 2em;
+}
+
+.categorias--principales--general{
+    width: 100%;
+    align-self: center;
+    max-width: 110em;
 }
 
 .categorias--principales h2{
@@ -639,6 +654,12 @@ img header {
     margin-bottom: em;
 }
 
+.contactame--nosotros{
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
 .container--contacto{
     display: flex;
     width: 95%;
@@ -673,17 +694,123 @@ img header {
 }
 
 .container--column--input span{
-    font-size: 1.2em;
+    font-size: 1.2rem;
     line-height: 2.4em;
+    color: rgba(0, 0, 0, 0.8);;
 }
-=======
+
+.container--checkbox{
+    width: 100%;
+    padding: 1em;
+}
+
+.container--checkbox span{
+    font-size: 1.2em;
+    margin-left: 0.5em;
+}
+
+.container--checkbox span a{
+    color: var(--curtx-blue);
+    text-decoration: none;
+}
+
+.button--contacto{
+    background-color: transparent;
+    border-radius: 1em;
+    padding: 0.6em 2em;
+    color: var(--curtx-blue);
+    font-size: 1.5rem;
+    border: 0.1em solid var(--curtx-blue);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.container--column--input--right{
+    text-align: right;
+    margin: 1em;
+}
 
 
-/*Apartados home*/
+/*Pagina cursos*/
+/*Seccion de curso - Pagina cursos*/
+
+.cursos--container{
+    position: relative;
+    width: 100%;
+    min-width: 32em;
+    height: auto;
+    padding: 2em;
+    background-color: #F2F2F2;
+}
+
+.cursos--selectbox--container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2em;
+    max-width: 124em;
+    align-self: center;
+}
+
+.cursos--selectbox--container h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3.4rem;
+    color: #000000;
+}
+
+.cursos--selectbox--container h3{
+    font-weight: 700;
+    font-size: 1.7em;
+    line-height: 2.0em;
+    color: #000000;
+}
+
+/*Select de cursos - Pagina cursos*/
+
+.nav--selectbox{
+    height: auto;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+.nav--selectbox select{
+    width: 100%;
+    padding: 0.5em 0.5em;
+}
+
+/*Cursos more - Pagina cursos*/
+
+.container--cursos--more{
+    display: flex;
+    height: 15em;
+    width: 100%;
+}
+
+.boton--cursos--more{
+    width:90%;
+    height: auto;
+    align-self: center;
+    margin-left: calc(50% - 14.5em);
+}
+
+.boton--cursos--more a{
+    background-color: var(--secundary-blue);
+    padding: 0.5em 0.5em;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.boton--cursos--more i{
+    margin-left: 2em;
+}
+
+
 
 /*Error*/
 
-.title-word {
+.title-word--error {
   animation: color-animation 4s linear infinite;
 }
 
@@ -709,28 +836,26 @@ img header {
   100%  {color: var(--color-1)}
 }
 
-.container1 {
+.container--error {
   display: grid;
   place-items: center;
   text-align: center;
-  height: 100vh
+  height: 80vh
 }
 
-.title {
-  font-family: 'DM Sans', sans-serif;
+.title--error span{
   font-weight: 800;
-  font-size: 8.5vw;
+  font-size: 10rem;
   text-transform: uppercase;
 }
 
-.title1 {
-  font-family: 'DM Sans', sans-serif;
+.container--error h2{
   font-weight: 800;
-  font-size: 6.5vw;
+  font-size: 4rem;
   text-transform: uppercase;
 }
 
-/*login*/
+/*Login*/
 
 .contenedor_contenido{
 
@@ -789,8 +914,8 @@ img header {
   padding: 12px 20px;
   font-size: 1em;
   letter-spacing: 1px;
-  color: #black;
-  background:#028090;
+  color: black;
+  background: #028090;
 }
 
 /*registro*/
@@ -852,7 +977,6 @@ img header {
   padding: 12px 20px;
   font-size: 1em;
   letter-spacing: 1px;
-  color: #black;
+  color: black;
   background:#028090;
 }
->>>>>>> 88bfe3b5dddc50c370fa7acfd89ee0c557b800c1
