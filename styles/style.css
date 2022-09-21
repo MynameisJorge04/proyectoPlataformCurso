@@ -189,7 +189,6 @@ img header {
 }
 
 .lista li {
-  list-style: none;
   font-size: 1.6rem;
   padding: 0.5em 0 0.5em 0.5em;
   font-style: normal;
@@ -212,19 +211,16 @@ img header {
   text-decoration: none;
   background-color: transparent;
   border: 0.15rem solid black;
+  color: black;
+  font-size: 1em;
+  padding: 0.6em 0.7em;
 }
 
 .button-idioma i {
-  color: black;
-  padding: 0.7em;
   font-size: 1.2em;
+  padding: 0em 0.3em;
 }
 
-.button-idioma p {
-  color: black;
-  padding: 0.7em;
-  font-size: 1.2em;
-}
 
 /*Pagina home*/
 /*Seccion de title - Pagina home*/
@@ -977,4 +973,75 @@ img header {
   letter-spacing: 1px;
   color: black;
   background:#028090;
+}
+
+/*Footer*/
+
+footer{
+  background: linear-gradient(262.8deg, #05668D 2.74%, #028090 61.24%);
+  width: 100%;
+  height: auto;
+  padding: 2em;
+}
+
+.footer--button--general--idioma{
+  width: 100%;
+}
+
+/*Redes sociales*/
+.redes--sociales--footer{
+  display: flex;
+  width: 100%;
+  margin: 1em 0;
+  justify-content: center;
+}
+
+.red--social--footer{
+  padding: 0.5em;
+}
+
+.red--social--footer a{
+  color: var(--white);
+  font-size: 4rem;
+}
+
+/*Idioma button*/
+
+.button-idioma--footer{
+  display: flex;
+  text-decoration: none;
+  background-color: transparent;
+  border: 0.15rem solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-size: 1.4em;
+  padding: 1em 1.2em;
+}
+
+.button-idioma--footer i{
+  padding: 0em 0.7em 0 0;
+  font-size: 1.4em;
+}
+
+.footer--general--mobile{
+  text-align: center;
+  justify-content: center;
+  height: auto;
+}
+
+
+/*Privacidad y copyrght*/
+
+.footer--temas-privacidad a{
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer--general--mobile p{
+  color: white;
+  padding: 1em;
+}
+
+.footer--general--desktop{
+  display: none;
 }

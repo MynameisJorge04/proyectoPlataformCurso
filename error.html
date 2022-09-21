@@ -22,121 +22,124 @@
 </head>
 
 <body>
-
-    <!--Bloque barra lateral al apretar el menu-->
-
-    <header class="container" id="header-menu">
-
-        <div class="header-general">
-
-            <div class="button_menu_mobile">
+<!--Bloque barra lateral al apretar el menu-->
+<nav class="menu_mobile">
+    <div class="lista">
+        <ul>
+            <li>
+                <img src="./assets/icons/curtx.png" alt="">
+                <span class="icon_cerrar" id="btn_cerrar">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+            </li>
+            <li><a href="">Iniciar sesion</a></li>
+            <li><a href="">Registro</a></li>
+        </ul>
+    </div>
+    <div class="lista">
+        <ul>
+            <li><a href="">Cursos</a></li>
+            <li><a href="">Contacto</a></li>
+            <li><a href="">Centro de ayuda</a></li>
+        </ul>
+    </div>
+    <div class="lista idiomas">
+        <ul>
+            <li><strong>Temas</strong></li>
+            <li><a href="">Ciencia de datos</a></li>
+            <li><a href="">Negocios</a></li>
+            <li><a href="">Salud</a></li>
+            <li><a href="">Desarrollo personal</a></li>
+            <li><a href="">Ciencias sociales</a></li>
+            <li><a href="">Tecnologias de la informacion</a></li>
+            <li><button class="button-idioma">
+                    <i class="fa-solid fa-language"></i>
+                    <p>Español</p>
+                </button>
+            </li>
+        </ul>
+    </div>
+  </nav>
+  
+  <!--Bloque barra lateral al apretar el menu-->
+  
+  <header class="container" id="header-menu">
+  
+    <div class="header-general">
+  
+        <div class="button_menu_mobile">
             <span class="icons button_menu" id="btn_menu">
                 <i class="fa fa-bars"></i>
             </span>
+        </div>
+  
+        <nav class="menu">
+  
+  
+            <div class="menu_desktop">
+                <img src="./assets/icons/curtx.png" alt="Logo de curtx">
+                <ul class="menu_items">
+                    <li><a href="">Cursos</a></li>
+                </ul>
             </div>
-
-            <nav class="menu">
-
-
-                <div class="menu_desktop">
-                    <img src="./assets/icons/curtx.png" alt="Logo de curtx">
-                    <ul class="menu_items">
-                        <li><a href="">Cursos</a></li>
-                    </ul>
-                </div>
-
-            </nav>
-
-            <div class="logo_mobile">
-                <img src="./assets/icons/logo-movil.png" alt="Logo de curtx">
-            </div>
-
-            <div class="nav_busqueda">
+  
+        </nav>
+  
+        <div class="logo_mobile">
+            <img src="./assets/icons/logo-movil.png" alt="Logo de curtx">
+        </div>
+  
+        <div class="nav_busqueda">
+            <button class="icons">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </button>
+  
+            <button class="icons">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+            </button>
+        </div>
+  
+        <div class="nav_busqueda_desktop">
+            <form action="" class="form_busqueda">
                 <button class="icons">
                     <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                 </button>
-
-                <button class="icons">
-                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-            </div>
-
-            <div class="nav_busqueda_desktop">
-                <form action="" class="form_busqueda">
-                    <button class="icons">
-                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-                    </button>
-                    <input type="text" placeholder="Busca cualquier cosa">
-                </form>
-
-            </div>
-
-            <div class="academia_desktop">
-                <a href="">Academia Curtx</a>
-            </div>
-
-            <div class="nav_tienda_desktop">
-                <button class="icons">
-                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-            </div>
-
-            <div class="inicio_sesion_desktop">
-                <a href="">Iniciar sesion</a>
-            </div>
-
-            <div class="registro_desktop">
-                <a href="">Registro</a>
-            </div>
-
-            <div class="idioma_desktop">
-                <button class="icons">
-                    <i class="fa-solid fa-language"></i>
-                </button>
-            </div>
-
+                <input type="text" placeholder="Busca cualquier cosa">
+            </form>
+  
         </div>
-
-    </header>
-
-    <!--Bloque barra lateral al apretar el menu-->
-    <nav class="menu_mobile" >
-        <div class="lista">
-            <ul>
-                <li>
-                    <img src="./assets/icons/curtx.png" alt="">
-                    <span class="icon_cerrar" id="btn_cerrar">
-                        <i class="fa-solid fa-xmark"></i>
-                    </span>
-                </li>
-                <li><a href="">Iniciar sesion</a></li>
-                <li><a href="">Registro</a></li>
-            </ul>
+  
+        <div class="academia_desktop">
+            <a href="">Academia Curtx</a>
         </div>
-        <div class="lista">
-            <ul>
-                <li><a href="">Cursos</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Centro de ayuda</a></li>
-            </ul>
+  
+        <div class="nav_tienda_desktop">
+            <button class="icons">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+            </button>
         </div>
-        <div class="lista idiomas">
-            <ul>
-                <li><strong>Temas</strong></li>
-                <li><a href="">Ciencia de datos</a></li>
-                <li><a href="">Negocios</a></li>
-                <li><a href="">Salud</a></li>
-                <li><a href="">Desarrollo personal</a></li>
-                <li><a href="">Ciencias sociales</a></li>
-                <li><a href="">Tecnologias de la informacion</a></li>
-                <li><button class="button-idioma">
-                        <i class="fa-solid fa-language"></i>
-                        <p>Español</p>
-                    </button>
-                </li>
-            </ul>
+  
+        <div class="inicio_sesion_desktop">
+            <a href="">Iniciar sesion</a>
         </div>
-    </nav>
+  
+        <div class="registro_desktop">
+            <a href="">Registro</a>
+        </div>
+  
+        <div class="idioma_desktop">
+            <button class="icons">
+                <i class="fa-solid fa-language"></i>
+            </button>
+        </div>
+  
+    </div>
+  
+  </header>
+  
+  
+  
+  <main class="" id="main">
 
     <div class="container--error">
           <h2 class="title--error">
@@ -146,6 +149,8 @@
           <img src="assets/imgs/rocket.gif" alt="error" width="300" height="300">
           <h2>OOPS...Página no encontrada!</h2>
         </div>
+
+  </main>
 
 </body>
 <script src="./scripts/menu.js"></script>
