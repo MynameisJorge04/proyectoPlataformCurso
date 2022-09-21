@@ -7,29 +7,29 @@
 */
 
 :root {
-    /*Colores*/
-    --curtx-blue: #028090;
-    --secundary-blue: #05668D;
-    --extra-color: #02C39A;
-    --secundary-extra: #00A896;
-    --parrafo-color: #F0F3BD;
-    --white: #ffffff;
+  /*Colores*/
+  --curtx-blue: #028090;
+  --secundary-blue: #05668D;
+  --extra-color: #02C39A;
+  --secundary-extra: #00A896;
+  --parrafo-color: #F0F3BD;
+  --white: #ffffff;
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;
+  font-size: 62.5%;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .container {
-    flex-wrap: wrap;
-    display: flex;
+  flex-wrap: wrap;
+  display: flex;
 }
 
 /*Header*/
@@ -50,89 +50,89 @@ header {
 }
 
 .header-general {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 }
 
 .show_header {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .show--main {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 /*Bloque logo*/
 
 .logo_mobile {
-    width: 50%;
-    align-self: center;
-    padding: auto;
-    margin-top: 1.0em;
+  width: 50%;
+  align-self: center;
+  padding: auto;
+  margin-top: 1.0em;
 }
 
 img header {
-    width: 5.0em;
-    height: 5.0em;
+  width: 5.0em;
+  height: 5.0em;
 }
 
 
 /*Bloque iconos de busqueda*/
 
 .nav_busqueda {
-    width: 25%;
-    align-self: center;
-    font-size: 0.8em;
+  width: 25%;
+  align-self: center;
+  font-size: 0.8em;
 }
 
 
 /*Bloque iconos de desktop*/
 
 .inicio_sesion_desktop {
-    display: none;
+  display: none;
 }
 
 .registro_desktop {
-    display: none;
+  display: none;
 }
 
 .academia_desktop {
-    display: none;
+  display: none;
 }
 
 .idioma_desktop {
-    display: none;
+  display: none;
 }
 
 .menu_desktop {
-    display: none;
+  display: none;
 }
 
 .nav_busqueda_desktop {
-    display: none;
+  display: none;
 }
 
 .nav_tienda_desktop {
-    display: none;
+  display: none;
 }
 
 .objetos_desktop {
-    display: none;
+  display: none;
 }
 
 /*Menu*/
 .icons {
-    color: black;
-    background: none;
-    border: none;
-    font-size: 2.0em;
-    line-height: 3.0em;
-    padding: 0 0.6em;
-    align-self: center;
+  color: black;
+  background: none;
+  border: none;
+  font-size: 2.0em;
+  line-height: 3.0em;
+  padding: 0 0.6em;
+  align-self: center;
 }
 
 .button_menu_mobile {
-    width: 25%;
+  width: 25%;
 }
 
 /*Menu movil desplegable*/
@@ -153,144 +153,144 @@ img header {
 
 
 .show {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .show_cerrar {
-    margin-left: -100%
+  margin-left: -100%
 }
 
 
 .menu_mobile img {
-    width: 5.5em;
-    height: 2.0em;
+  width: 5.5em;
+  height: 2.0em;
 }
 
 .icon_cerrar {
-    color: black;
-    background: none;
-    border: none;
-    font-size: 1.5em;
-    line-height: 1.0em;
-    margin-left: auto;
-    float: right;
+  color: black;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  line-height: 1.0em;
+  margin-left: auto;
+  float: right;
 }
 
 .lista ul {
-    list-style: none;
-    border-bottom: 0.2rem solid var(--secundary-blue);
+  list-style: none;
+  border-bottom: 0.2rem solid var(--secundary-blue);
 }
 
 .lista ul {
-    list-style: none;
-    border-bottom: 0.1rem solid var(--secundary-blue);
-    padding-bottom: 1.3em;
-    padding-top: 1.3em;
+  list-style: none;
+  border-bottom: 0.1rem solid var(--secundary-blue);
+  padding-bottom: 1.3em;
+  padding-top: 1.3em;
 }
 
 .lista li {
-    list-style: none;
-    font-size: 1.6rem;
-    padding: 0.5em 0 0.5em 0.5em;
-    font-style: normal;
+  list-style: none;
+  font-size: 1.6rem;
+  padding: 0.5em 0 0.5em 0.5em;
+  font-style: normal;
 }
 
 .menu_mobile a {
-    text-decoration: none;
-    background-color: transparent;
-    color: var(--curtx-blue);
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--curtx-blue);
 }
 
 /*Bloque de idiomas*/
 
 .idiomas ul {
-    border-bottom: 1.0rem solid var(--white);
+  border-bottom: 1.0rem solid var(--white);
 }
 
 .button-idioma {
-    display: flex;
-    text-decoration: none;
-    background-color: transparent;
-    border: 0.15rem solid black;
+  display: flex;
+  text-decoration: none;
+  background-color: transparent;
+  border: 0.15rem solid black;
 }
 
 .button-idioma i {
-    color: black;
-    padding: 0.7em;
-    font-size: 1.2em;
+  color: black;
+  padding: 0.7em;
+  font-size: 1.2em;
 }
 
 .button-idioma p {
-    color: black;
-    padding: 0.7em;
-    font-size: 1.2em;
+  color: black;
+  padding: 0.7em;
+  font-size: 1.2em;
 }
 
 /*Pagina home*/
 /*Seccion de title - Pagina home*/
 
 .title {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    min-width: 32em;
-    height: 40.4em;
-    text-align: center;
-    background: linear-gradient(207.8deg, #00A896 16.69%, #05668D 100%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 32em;
+  height: 40.4em;
+  text-align: center;
+  background: linear-gradient(207.8deg, #00A896 16.69%, #05668D 100%);
 }
 
 .title img {
-    width: 6.5em;
-    height: 2.0em;
-    margin-top: 6em;
-    align-self: center;
+  width: 6.5em;
+  height: 2.0em;
+  margin-top: 6em;
+  align-self: center;
 }
 
 .title--container {
-    width: 80%;
-    min-width: 28.8em;
-    max-width: 90em;
-    height: 21.8em;
-    margin-top: 4em;
-    text-align: center;
-    align-self: center;
+  width: 80%;
+  min-width: 28.8em;
+  max-width: 90em;
+  height: 21.8em;
+  margin-top: 4em;
+  text-align: center;
+  align-self: center;
 }
 
 .title--container h1{
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 3.4rem;
-    color: var(--white);
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 3.4rem;
+  color: var(--white);
 }
 
 .title--container p{
-    margin-top: 1.5em;
-    font-size: 1.4rem;
-    font-weight: 550;
-    line-height: 1.8rem;
-    color: #FFE9D5;
+  margin-top: 1.5em;
+  font-size: 1.4rem;
+  font-weight: 550;
+  line-height: 1.8rem;
+  color: #FFE9D5;
 }
 
 .title--container .title--button{
-    position: absolute;
-    left: calc(50% - 10em);
-    top: 23em;
-    display: block;
-    margin-top: 3.5em;
-    padding: 1.5em;
-    width: 19em;
-    height: 4.3em;
-    background-color: var(--white);
-    /*Sombra boton*/
-    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-    border-radius: 0.4em;
-    border: none;
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
+  position: absolute;
+  left: calc(50% - 10em);
+  top: 23em;
+  display: block;
+  margin-top: 3.5em;
+  padding: 1.5em;
+  width: 19em;
+  height: 4.3em;
+  background-color: var(--white);
+  /*Sombra boton*/
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border-radius: 0.4em;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 
 .title--container .title--button i{
@@ -298,22 +298,22 @@ img header {
 }
 
 .title--container .title--unete--button{
-    display: none;
+  display: none;
 }
 
 /*seccion de aprendizaje*/
 
 .aprendizaje{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    min-width: 32em;
-    height: auto;
-    text-align: center;
-    margin-top: 4em;
-    margin-bottom: 4em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 32em;
+  height: auto;
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
 .aprendizaje--container{
@@ -326,56 +326,56 @@ img header {
 }
 
 .aprendizaje--container img {
-    width: 100%;
-    /*Su crecimiento es automatico*/
-    height: auto;
-    margin-top: 0 auto;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 100%;
+  /*Su crecimiento es automatico*/
+  height: auto;
+  margin-top: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .aprendizaje--container h2{
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 3.4rem;
-    color: #201E1C;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 3.4rem;
+  color: #201E1C;
 }
 
 .aprendizaje--container p{
-    margin-top: 1.1em;
-    margin-bottom: 1.1em;
-    font-size: 1.2rem;
-    font-weight: 520;
-    line-height: 1.8rem;
-    color: #757575;
+  margin-top: 1.1em;
+  margin-bottom: 1.1em;
+  font-size: 1.2rem;
+  font-weight: 520;
+  line-height: 1.8rem;
+  color: #757575;
 }
 
 /*Boton de busqueda - Seccion aprendizaje*/
 .busqueda_aprendizaje_bloque {
-    display: flex;
-    flex-grow: 1;
-    border: 1px solid #000000;
-    margin: 0 1.2rem;
-    height: 4.8rem;
-    background-color: var(--white);
-    margin-top: 0.7em;
+  display: flex;
+  flex-grow: 1;
+  border: 1px solid #000000;
+  margin: 0 1.2rem;
+  height: 4.8rem;
+  background-color: var(--white);
+  margin-top: 0.7em;
 }
 
 .form_busqueda_aprendizaje{
-    display: flex;
-    align-items: center;
-    padding: 0 2.4rem 0 0;
-    margin-top: -0.7em;
+  display: flex;
+  align-items: center;
+  padding: 0 2.4rem 0 0;
+  margin-top: -0.7em;
 }
 
 .form_busqueda_aprendizaje input{
-    background-color: transparent;
-    border: 0;
-    width: 100%;
-    -webkit-appearance: none;
-    border-radius: 0;
-    height: 3.4rem;
+  background-color: transparent;
+  border: 0;
+  width: 100%;
+  -webkit-appearance: none;
+  border-radius: 0;
+  height: 3.4rem;
 }
 
 /*Bloque de cursos - Seccion cursos*/
@@ -389,28 +389,28 @@ img header {
     height: auto;
     text-align: left;
     padding: 1em;
-    
+
     background: linear-gradient(180deg, #028090 46.88%, #05668D 97.4%);
 }
 
 .cursos_home h2{
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 3.4rem;
-    color: #ffffff;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 3.4rem;
+  color: #ffffff;
 }
 
 .cursos_home h3{
-    font-weight: 700;
-    font-size: 1.7em;
-    line-height: 2.0em;
-    color: #ffffff;
+  font-weight: 700;
+  font-size: 1.7em;
+  line-height: 2.0em;
+  color: #ffffff;
 }
 
 .cursos_home hr{
-    height: 0.2em;
-    background-color: var(--white);
-    border-radius: 0.1em;
+  height: 0.2em;
+  background-color: var(--white);
+  border-radius: 0.1em;
 }
 
 .container-cursos{
@@ -428,108 +428,99 @@ img header {
 /*Bloque de cursos card*/
 
 .card--curso{
-    width: 100%;
-    background-color: var(--white);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: auto;
-    margin-bottom: 1em;
+  width: 100%;
+  background-color: var(--white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: auto;
+  margin-bottom: 1em;
 }
 
 .card--curso--top img{
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .card--curso--body{
-    padding: 1em;
+  padding: 1em;
 }
 
 .card--curso--body h2 {
-    font-weight: 700;
-    font-size: 2.4rem;
-    line-height: 2.6rem;
-    color: #201E1C;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: #201E1C;
 }
 
 .card--curso--body p {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-    color: #757575;
-    margin-top: 0.5em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #757575;
+  margin-top: 0.5em;
 }
 
 .card--curso--bottom{
-    padding: 0 1em 1em 1em;
+  padding: 0 1em 1em 1em;
 }
 
 .precio--descuento--curso{
-    display: flex;
+  display: flex;
 }
 
 .precio--descuento--curso span {
-    font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    color: #028090;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #028090;
 }
 
 .price_old{
-    margin-left: 0.5em;
+  margin-left: 0.5em;
 }
 
 /*Boton de compra - Seccion curso*/
 
 .compra_button_cursos{
-    display: flex;
-    flex-grow: 1;
-    border: none;
-    margin: 0 1.2rem;
-    height: 4.8rem;
-    background-color: var(--curtx-blue);
-    margin-top: 0.7em;
+  display: flex;
+  flex-grow: 1;
+  border: none;
+  margin: 0 1.2rem;
+  height: 4.8rem;
+  background-color: var(--curtx-blue);
+  margin-top: 0.7em;
 
 }
 
 .form_compra_cursos{
-    display: flex;
-    align-items: center;
-    padding: 0 2.4rem 0 0;
-    margin-top: -0.4em;
-    margin-left: calc(50% - 8.3em);
+  display: flex;
+  align-items: center;
+  padding: 0 2.4rem 0 0;
+  margin-top: -0.4em;
+  margin-left: calc(50% - 8.3em);
 }
 
 .compra_curso_carrito_button{
-    display: flex;
-    border: none;
-    background-color: transparent;
+  display: flex;
+  border: none;
+  background-color: transparent;
 
 }
 
 .compra_curso_carrito_button span{
-    font-size: 1.5rem;
-    padding-left: 0.5em;
-    color: var(--white);
+  font-size: 1.5rem;
+  padding-left: 0.5em;
+  color: var(--white);
 }
 
 
 /*Cursos posibles imagenes - Seccion imegenes curso*/
 
-.cursos--diferentes{
-    position: relative;
-    width: 100%;
-    min-width: 32em;
-    height: auto;
-    padding: 2em;
-    background-color: #EFEFEF;
-    text-align: center;
-    
-}
 
 .imagenes--cursos--container--general{
     width: 100%;
     align-self: center;
     max-width: 110em;
+    text-align: center;
 }
 
 .cursos--diferentes h2{
@@ -907,6 +898,13 @@ img header {
   font-size: 1em;
   font-weight: 400;
   letter-spacing: 1px;
+}
+
+.alinearizq {
+  float: left;
+}
+.alinearder {
+  float: right;
 }
 
 .input button{
