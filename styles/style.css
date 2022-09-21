@@ -225,7 +225,8 @@ img header {
   font-size: 1.2em;
 }
 
-/*seccion de incio*/
+/*Pagina home*/
+/*Seccion de title - Pagina home*/
 
 .title {
   position: relative;
@@ -311,13 +312,13 @@ img header {
 }
 
 .aprendizaje--container{
-  width: 80%;
-  min-width: 28.8em;
-  max-width: 100em;
-  height: auto;
-  margin-top: 2em;
-  text-align: center;
-  align-self: center;
+    width: 80%;
+    min-width: 28.8em;
+
+    height: auto;
+    margin-top: 2em;
+    text-align: center;
+    align-self: center;
 }
 
 .aprendizaje--container img {
@@ -376,15 +377,16 @@ img header {
 /*Bloque de cursos - Seccion cursos*/
 
 .cursos_home{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-width: 32em;
-  height: auto;
-  text-align: left;
-  padding: 1em;
-  background: linear-gradient(180deg, #028090 46.88%, #05668D 97.4%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 32em;
+    height: auto;
+    text-align: left;
+    padding: 1em;
+
+    background: linear-gradient(180deg, #028090 46.88%, #05668D 97.4%);
 }
 
 .cursos_home h2{
@@ -408,13 +410,15 @@ img header {
 }
 
 .container-cursos{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-width: 32em;
-  height: auto;
-  padding: 2em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 32em;
+    height: auto;
+    padding: 2em;
+    max-width: 124em;
+    align-self: center;
 }
 
 /*Bloque de cursos card*/
