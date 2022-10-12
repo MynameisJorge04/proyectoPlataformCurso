@@ -66,20 +66,20 @@ html {
     text-align: center;
     color: #201E1C;
     text-decoration: none;
-
 }
 
+.menu_items li a:hover{
+    transition: all .4s;
+    color: #656565;
+    opacity: 0.8;
+}
 
 .menu{
     flex-grow: 1;
 }
 
 
-.nav_busqueda{
-    display: none;
-}
-
-.logo_mobile{
+.nav_busqueda, .cursos_home hr, .logo_mobile{
     display: none;
 }
 
@@ -92,7 +92,7 @@ html {
     text-decoration: none;
 }
 
-/*Bloque incio de sesion*/
+/*Bloque incio de sesion - Pagina Inicio*/
 
 .inicio_sesion_desktop {
     display: block;
@@ -101,7 +101,7 @@ html {
 }
 
 .inicio_sesion_desktop a{
-    border: 1px solid #1c1d1f;
+    border: 1.5px solid #1c1d1f;
     margin: 0 1.2rem;
     padding: 0.8em 0.6em;
     font-weight: 700;
@@ -113,7 +113,14 @@ html {
     
 }
 
-/*Bloque de academia*/
+.inicio_sesion_desktop a:hover {
+    transition: all 0.5s;
+    background-color: #000000;
+    color: var(--white);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+/*Bloque de academia - Pagina Inicio*/
 
 .academia_desktop {
     display: block;
@@ -128,14 +135,14 @@ html {
     text-decoration: none;
 }
 
-/*Bloque de shopping*/
+/*Bloque de shopping - Pagina Inicio*/
 
 .nav_tienda_desktop {
     display: block;
     flex-grow: 1;
 }
 
-/*Bloque de busqueda*/
+/*Bloque de busqueda - Pagina Inicio*/
 
 .nav_busqueda_desktop {
     display: block;
@@ -165,7 +172,7 @@ html {
     height: 3.4rem;
 }
 
-/*Bloque de idioma*/
+/*Bloque de idioma - Pagina Inicio*/
 
 .idioma_desktop {
     display: block;
@@ -173,7 +180,7 @@ html {
 
 }
 
-/*Bloque de registro*/
+/*Bloque de registro - Pagina Inicio*/
 
 .registro_desktop{
     display: block;
@@ -182,14 +189,21 @@ html {
 }
 
 .registro_desktop a{
-    border: 1px solid #1c1d1f;
     margin: 0 1.2rem;
-    padding: 0.5em 1.2em;
+    padding: 0.8em 0.8em;
     background-color: black;
     font-size: 1.5em;
     color: var(--white);
     text-decoration: none;
     
+}
+
+.registro_desktop a:hover {
+    transition: all 0.5s;
+    border: 1px solid #1c1d1f;
+    background-color: var(--white);
+    color: #000000;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -217,6 +231,14 @@ html {
     margin-left: calc(50% - 9.6em);
 }
 
+.title--container .title--unete--button:hover{
+    background-color: white;
+    transition: all 0.5s;
+    color: var(--curtx-blue);
+
+
+}
+
 /*Bloque de cursos - Seccion cursos*/
 
 .container-cursos{
@@ -241,14 +263,9 @@ html {
     color: #000000;
 }
 
-.cursos_home hr{
-    display: none;
-}
-
 .container--general--cursos{
     align-self: center;
 }
-
 
 /*Bloque de imagenes - Seccion imagenes*/
 
@@ -277,8 +294,6 @@ html {
 .cursos--selectbox--container{
     align-self: center;
 }
-
-
 
 /*Bloque de cursos card*/
 

@@ -88,35 +88,7 @@ img header {
 
 /*Bloque iconos de desktop*/
 
-.inicio_sesion_desktop {
-  display: none;
-}
-
-.registro_desktop {
-  display: none;
-}
-
-.academia_desktop {
-  display: none;
-}
-
-.idioma_desktop {
-  display: none;
-}
-
-.menu_desktop {
-  display: none;
-}
-
-.nav_busqueda_desktop {
-  display: none;
-}
-
-.nav_tienda_desktop {
-  display: none;
-}
-
-.objetos_desktop {
+.inicio_sesion_desktop, .registro_desktop,  .academia_desktop, .idioma_desktop, .menu_desktop, .nav_busqueda_desktop, .nav_tienda_desktop, .objetos_desktop, .title--container .title--unete--button{
   display: none;
 }
 
@@ -293,9 +265,6 @@ img header {
     margin-left: 2em;
 }
 
-.title--container .title--unete--button{
-  display: none;
-}
 
 /*seccion de aprendizaje*/
 
@@ -515,7 +484,7 @@ img header {
 .imagenes--cursos--container--general{
     width: 100%;
     align-self: center;
-    max-width: 110em;
+    max-width: 90em;
     text-align: center;
 }
 
@@ -528,7 +497,7 @@ img header {
 }
 
 .container--images--cursos{
-    padding: 2.5em;
+    padding: 4em;
     display: flex;
     flex-wrap: wrap;
 }
@@ -542,7 +511,7 @@ img header {
 }
 
 .imagen--cursos img{
-    width: 90%;
+    width: 70%;
     height: auto;
 }
 
@@ -590,7 +559,7 @@ img header {
     height: auto;
 }
 
-/*Botones a*/
+/*Botones de cada categoria -- Seccion Categorias*/
 
 .container--categorias a{
     border-radius: 3em;
@@ -603,6 +572,12 @@ img header {
     align-self: center;
     padding: 1em;
     margin: 0.3em;
+}
+
+.container--categorias a:hover{
+  transition: all 0.5s;
+  background-color:#000000;
+  color: var(--white);
 }
 
 /*Columnas grid de a*/
