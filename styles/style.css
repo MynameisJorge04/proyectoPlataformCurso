@@ -1,7 +1,7 @@
 /*
-1.Posicionamiento
-2.Modelo caja (Box model)
-3.Tipografia
+1. General estilos 
+2. Header
+3. Tipografia
 4. Visuales
 5. Otros
 */
@@ -32,9 +32,8 @@ html {
   display: flex;
 }
 
-/*Header*/
-/*Posicionamiento*/
-/*Estilos*/
+
+/*Header -- Seccion General*/
 
 header {
     position: relative;
@@ -62,7 +61,7 @@ header {
   opacity: 0.6;
 }
 
-/*Bloque logo*/
+/*Bloque logo -- Seccion header*/
 
 .logo_mobile {
   width: 50%;
@@ -77,7 +76,7 @@ img header {
 }
 
 
-/*Bloque iconos de busqueda*/
+/*Bloque iconos de busqueda -- Seccion header*/
 
 .nav_busqueda {
   width: 25%;
@@ -86,43 +85,15 @@ img header {
 }
 
 
-/*Bloque iconos de desktop*/
+/*Bloque iconos de desktop -- Seccion header*/
 
-.inicio_sesion_desktop {
+.inicio_sesion_desktop, .registro_desktop,  .academia_desktop, .idioma_desktop, .menu_desktop, .nav_busqueda_desktop, .nav_tienda_desktop, .objetos_desktop, .title--container .title--unete--button{
   display: none;
 }
 
-.registro_desktop {
-  display: none;
-}
-
-.academia_desktop {
-  display: none;
-}
-
-.idioma_desktop {
-  display: none;
-}
-
-.menu_desktop {
-  display: none;
-}
-
-.nav_busqueda_desktop {
-  display: none;
-}
-
-.nav_tienda_desktop {
-  display: none;
-}
-
-.objetos_desktop {
-  display: none;
-}
-
-/*Menu*/
+/*Menu -- Seccion General*/
 .icons {
-  color: black;
+  color: rgb(0, 0, 0);
   background: none;
   border: none;
   font-size: 2.0em;
@@ -131,11 +102,16 @@ img header {
   align-self: center;
 }
 
+.icons i:hover{
+  color: rgb(94, 94, 94);
+  transition: all .3s;
+}
+
 .button_menu_mobile {
   width: 25%;
 }
 
-/*Menu movil desplegable*/
+/*Menu mobile desplegable -- Seccion General*/
 
 .menu_mobile {
     position: absolute;
@@ -201,7 +177,7 @@ img header {
   color: var(--curtx-blue);
 }
 
-/*Bloque de idiomas*/
+/*Bloque de idiomas -- Seccion Header*/
 
 .idiomas ul {
   border-bottom: 1.0rem solid var(--white);
@@ -223,7 +199,7 @@ img header {
 }
 
 /*Pagina home*/
-/*Seccion de title - Pagina home*/
+/*Seccion de title -- Pagina home*/
 
 .title {
   position: relative;
@@ -293,11 +269,8 @@ img header {
     margin-left: 2em;
 }
 
-.title--container .title--unete--button{
-  display: none;
-}
 
-/*seccion de aprendizaje*/
+/*Seccion de aprendizaje -- Pagina home*/
 
 .aprendizaje{
   position: relative;
@@ -347,7 +320,7 @@ img header {
   color: #757575;
 }
 
-/*Boton de busqueda - Seccion aprendizaje*/
+/*Boton de busqueda -- Seccion aprendizaje -- Pagina home*/
 .busqueda_aprendizaje_bloque {
   display: flex;
   flex-grow: 1;
@@ -360,8 +333,8 @@ img header {
 
 .form_busqueda_aprendizaje{
   display: flex;
+  width: 100%;
   align-items: center;
-  padding: 0 2.4rem 0 0;
   margin-top: -0.7em;
 }
 
@@ -372,9 +345,10 @@ img header {
   -webkit-appearance: none;
   border-radius: 0;
   height: 3.4rem;
+  outline: none;
 }
 
-/*Bloque de cursos - Seccion cursos*/
+/*Bloque de cursos -- Seccion cursos -- Pagina home*/
 
 .cursos_home{
     position: relative;
@@ -421,7 +395,7 @@ img header {
     align-self: center;
 }
 
-/*Bloque de cursos card*/
+/*Bloque de cursos card -- Seccion cursos -- Pagina home*/
 
 .card--curso{
   width: 100%;
@@ -434,6 +408,11 @@ img header {
 .card--curso--top img{
   width: 100%;
   height: auto;
+}
+
+.card--curso--top:hover img{
+	filter: grayscale(100%);
+	transition: .3s ease-in-out;
 }
 
 .card--curso--body{
@@ -474,7 +453,7 @@ img header {
   margin-left: 0.5em;
 }
 
-/*Boton de compra - Seccion curso*/
+/*Boton de compra -- Seccion curso -- Pagina home*/
 
 .compra_button_cursos{
   display: flex;
@@ -509,13 +488,13 @@ img header {
 }
 
 
-/*Cursos posibles imagenes - Seccion imegenes curso*/
+/*Cursos posibles imagenes -- Seccion imegenes curso -- Pagina home*/
 
 
 .imagenes--cursos--container--general{
     width: 100%;
     align-self: center;
-    max-width: 110em;
+    max-width: 90em;
     text-align: center;
 }
 
@@ -528,7 +507,7 @@ img header {
 }
 
 .container--images--cursos{
-    padding: 2.5em;
+    padding: 4em;
     display: flex;
     flex-wrap: wrap;
 }
@@ -542,11 +521,11 @@ img header {
 }
 
 .imagen--cursos img{
-    width: 90%;
+    width: 70%;
     height: auto;
 }
 
-/*Cursos categorias principales - Seccion categorias principales*/
+/*Cursos categorias principales -- Seccion Categorias -- Pagina home*/
 
 .categorias--principales{
     position: relative;
@@ -590,7 +569,7 @@ img header {
     height: auto;
 }
 
-/*Botones a*/
+/*Botones de cada categoria -- Seccion Categorias -- Pagina home*/
 
 .container--categorias a{
     border-radius: 3em;
@@ -605,7 +584,13 @@ img header {
     margin: 0.3em;
 }
 
-/*Columnas grid de a*/
+.container--categorias a:hover{
+  transition: all 0.5s;
+  background-color:#000000;
+  color: var(--white);
+}
+
+/*Columnas grid de a -- Seccion Categoria --Pagina home*/
 
 .container--categorias .column-5{
     width: 45%;
@@ -623,7 +608,8 @@ img header {
     width: 95%;
 }
 
-/*Contacto - Pagina*/
+/*Pagina Contacto*/
+/*Seccion Contacto -- Pagina Contacto*/
 
 .contactame--nosotros{
     position: relative;
@@ -653,7 +639,7 @@ img header {
     text-align: left;
 }
 
-/*Contacto form - Pagina Contacto*/
+/*Contacto form -- Seccion Contacto -- Pagina Contacto*/
 .container--contacto form{
     width: 100%;
     padding: 1em;
@@ -718,7 +704,7 @@ img header {
 
 
 /*Pagina cursos*/
-/*Seccion de curso - Pagina cursos*/
+/*Seccion de curso -- Pagina cursos*/
 
 .cursos--container{
     position: relative;
@@ -752,7 +738,7 @@ img header {
     color: #000000;
 }
 
-/*Select de cursos - Pagina cursos*/
+/*Select de cursos -- Seccion de curso -- Pagina cursos*/
 
 .nav--selectbox{
     height: auto;
@@ -765,7 +751,7 @@ img header {
     padding: 0.5em 0.5em;
 }
 
-/*Cursos more - Pagina cursos*/
+/*Cursos more -- Seccion de curso -- Pagina cursos*/
 
 .container--cursos--more{
     display: flex;
@@ -794,8 +780,8 @@ img header {
 }
 
 
-
-/*Error*/
+/*Pagina error*/
+/*Seccion Error -- Pagina error*/
 
 .title-word--error {
   animation: color-animation 4s linear infinite;
@@ -842,7 +828,8 @@ img header {
   text-transform: uppercase;
 }
 
-/*Login*/
+/*Pagina Login*/
+/*Seccion Login -- Pagina Login*/
 
 .contenedor_contenido{
 
@@ -913,7 +900,8 @@ img header {
   background: #028090;
 }
 
-/*registro*/
+/*Pagina Resgitro*/
+/*Seccion Register -- Pagina Registro*/
 
 .contenedor_contenido1{
 
@@ -977,20 +965,21 @@ img header {
   background:#028090;
 }
 
-/*Footer*/
+/*Footer -- Pagina general*/
 
 footer{
   background: linear-gradient(262.8deg, #05668D 2.74%, #028090 61.24%);
   width: 100%;
   height: auto;
   padding: 2em;
+  margin-top: auto;
 }
 
 .footer--button--general--idioma{
   width: 100%;
 }
 
-/*Redes sociales*/
+/*Redes sociales -- Seccion footer -- Pagina general*/
 .redes--sociales--footer{
   display: flex;
   width: 100%;
@@ -1007,7 +996,7 @@ footer{
   font-size: 4rem;
 }
 
-/*Idioma button*/
+/*Idioma button -- Seccion footer -- Pagina general*/
 
 .button-idioma--footer{
   display: flex;
@@ -1031,7 +1020,7 @@ footer{
 }
 
 
-/*Privacidad y copyrght*/
+/*Privacidad y copyrght -- Seccion footer -- Pagina general*/
 
 .footer--temas-privacidad a{
   color: var(--white);

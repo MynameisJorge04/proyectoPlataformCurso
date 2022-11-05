@@ -66,20 +66,20 @@ html {
     text-align: center;
     color: #201E1C;
     text-decoration: none;
-
 }
 
+.menu_items li a:hover, .academia_desktop a:hover{
+    transition: all .4s;
+    color: #656565;
+    opacity: 0.8;
+}
 
 .menu{
     flex-grow: 1;
 }
 
 
-.nav_busqueda{
-    display: none;
-}
-
-.logo_mobile{
+.nav_busqueda, .cursos_home hr, .logo_mobile{
     display: none;
 }
 
@@ -92,7 +92,7 @@ html {
     text-decoration: none;
 }
 
-/*Bloque incio de sesion*/
+/*Bloque incio de sesion - Pagina Inicio*/
 
 .inicio_sesion_desktop {
     display: block;
@@ -101,7 +101,7 @@ html {
 }
 
 .inicio_sesion_desktop a{
-    border: 1px solid #1c1d1f;
+    border: 1.5px solid #1c1d1f;
     margin: 0 1.2rem;
     padding: 0.8em 0.6em;
     font-weight: 700;
@@ -113,7 +113,14 @@ html {
     
 }
 
-/*Bloque de academia*/
+.inicio_sesion_desktop a:hover {
+    transition: all 0.5s;
+    background-color: #000000;
+    color: var(--white);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+/*Bloque de academia - Pagina Inicio*/
 
 .academia_desktop {
     display: block;
@@ -128,14 +135,14 @@ html {
     text-decoration: none;
 }
 
-/*Bloque de shopping*/
+/*Bloque de shopping - Pagina Inicio*/
 
 .nav_tienda_desktop {
     display: block;
     flex-grow: 1;
 }
 
-/*Bloque de busqueda*/
+/*Bloque de busqueda - Pagina Inicio*/
 
 .nav_busqueda_desktop {
     display: block;
@@ -156,16 +163,17 @@ html {
     margin-top: -0.7em;
 }
 
-.nav_busqueda_desktop input{
+.nav_busqueda_desktop .form_busqueda  input{
     background-color: transparent;
     border: 0;
     width: 100%;
     -webkit-appearance: none;
     border-radius: 0;
     height: 3.4rem;
+    outline: none;
 }
 
-/*Bloque de idioma*/
+/*Bloque de idioma - Pagina Inicio*/
 
 .idioma_desktop {
     display: block;
@@ -173,7 +181,7 @@ html {
 
 }
 
-/*Bloque de registro*/
+/*Bloque de registro - Pagina Inicio*/
 
 .registro_desktop{
     display: block;
@@ -182,18 +190,23 @@ html {
 }
 
 .registro_desktop a{
-    border: 1px solid #1c1d1f;
     margin: 0 1.2rem;
-    padding: 0.5em 1.2em;
-    background-color: black;
+    padding: 0.8em 0.8em;
+    background-color: rgb(27, 27, 27);
     font-size: 1.5em;
     color: var(--white);
     text-decoration: none;
     
 }
 
+.registro_desktop a:hover {
+    transition: all 0.5s;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
 
-/*Bloque title - Pagina home*/
+
+/*Bloque title - Pagina inicio*/
 
 .title {
     height: 60.4em;
@@ -217,6 +230,14 @@ html {
     margin-left: calc(50% - 9.6em);
 }
 
+.title--container .title--unete--button:hover{
+    background-color: white;
+    transition: all 0.5s;
+    color: var(--curtx-blue);
+
+
+}
+
 /*Bloque de cursos - Seccion cursos*/
 
 .container-cursos{
@@ -227,7 +248,6 @@ html {
 }
 
 .cursos_home{
-    
     background: var(--white);
     justify-content: center;
     width: 100%;
@@ -241,14 +261,9 @@ html {
     color: #000000;
 }
 
-.cursos_home hr{
-    display: none;
-}
-
 .container--general--cursos{
     align-self: center;
 }
-
 
 /*Bloque de imagenes - Seccion imagenes*/
 
@@ -278,8 +293,6 @@ html {
     align-self: center;
 }
 
-
-
 /*Bloque de cursos card*/
 
 .card--curso{
@@ -304,10 +317,11 @@ html {
 
 .footer--general--desktop{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .lista--footer--desktop{
-    width: 25%;
+    width: 23%;
 }
 
 .lista--footer--desktop ul{
@@ -321,10 +335,28 @@ html {
     
 }
 
-.lista--footer--desktop a{
+.lista--footer--desktop a, .container--copyright--footer p{
     font-size: 1.6rem;
     text-decoration: none;
     color: var(--white);
+}
+
+.lista--footer--desktop li a:hover{
+    text-decoration: underline var(--white);
+    transition: all .9s;
+}
+
+.container--logo--footer{
+    width: 50%;
+    padding: 5.5em 0 0.5em 0.5em;
+}
+
+
+.container--copyright--footer{
+    width: 50%;
+    text-align: end;
+    padding: 5.5em 0.7em 0 0;
+
 }
 
 /*Login*/
