@@ -152,16 +152,16 @@
         <h1>Curxt</h1>
         <h2>Inicio de sesión</h2>
         <div class="contenedor_formulario">
-          
-          <!--Formulario registro-->
-          <form id="form_login">
+
+          <!--Formulario de login-->
+          <form id="form_login" onsubmit="return validationlogin()" method="post">
             <div class="input">
               <span>Usuario</span>
-              <input type="text" name="" id="" class="usuario" required />
+              <input type="text" name="usuario" />
             </div>
             <div class="input">
               <span>Contraseña</span>
-              <input type="password" name="" class="contra" />
+              <input type="password" name="contra" />
             </div>
             <div class="input">
               <button type="submit">
@@ -256,5 +256,6 @@
   </footer>
 
 </body>
+<script src="./scripts/validation.js" defer></script>
 
 </html>
