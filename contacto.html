@@ -147,10 +147,10 @@
             <div class="container--contacto">
 
                 <!--Formulario de contacto-->
-                <form class="form--contacto">
+                <form class="form--contacto" onsubmit="return validationcontacto()" method="post">
                     <div class="container--column--input">
                         <span>Nombre (s)</span>
-                        <input type="text">
+                        <input type="text" name="usuario">
                     </div>
 
                     <div class="container--column--input">
@@ -160,11 +160,11 @@
 
                     <div class="container--column--input">
                         <span>Correo electronico</span>
-                        <input type="text">
+                        <input type="text" name="EMail">
                     </div>
                     <div class="container--column--input">
                         <span>Telefono </span>
-                        <input type="text">
+                        <input type="text" size="10" name="tel">
                     </div>
 
                     <div class="container--column--input">
@@ -173,13 +173,15 @@
                     </div>
 
                     <div class="container--checkbox">
-                        <input type="checkbox">
+                        <input type="checkbox" name="aviso">
                         <span>He leído y acepto el <a href="">Aviso de Privacidad</a></span>
                     </div>
 
                     <div class="container--column--input--right">
                         <button class="button--contacto">Enviar</button>
+                        <button type="reset" class="button--contacto">Borrar</button>
                     </div>
+
                 </form>
             </div>
             <p>Tu opinión es muy importante para nosotros, envíanos tus opiniones y comentarios acerca de nuestro
@@ -259,4 +261,5 @@
 
 
 </body>
+<script src="./scripts/validation.js" defer></script>
 </html>
