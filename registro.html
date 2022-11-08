@@ -148,27 +148,32 @@
         <div class="contenedor_formulario1">
 
           <!--Formulario registro-->
-          <form id="form_login1">
+          <form id="form_login1" onsubmit="return validationregistro()" method="post">
             <div class="input1">
               <span>Nombre(s)</span>
-              <input type="text" name="" id="" class="usuario" required />
+              <input type="text" name="Usuario" />
             </div>
             <div class="input1">
               <span>Apellidos</span>
-              <input type="text" name="" id="" class="usuario" required />
+              <input type="text" name="Apellido" />
             </div>
             <div class="input1">
               <span>Correo electronico</span>
-              <input type="email" name="" class="email" />
+              <input type="email" name="EMail" />
             </div>
             <div class="input1">
               <span>Contraseña</span>
-              <input type="password" name="" class="contra" />
+              <input type="password" name="Password" />
             </div>
             <div class="input1">
               <button type="submit">
                 <span class=titulo_boton>Registrarse</span>
               </button>
+            </div>
+            <div class="input1">
+                <button type="reset">
+                <span class=titulo_boton>Borrar</span>
+                </button>
             </div>
           </form>
         </div>
@@ -249,5 +254,6 @@
   </footer>
 
 </body>
+<script src="./scripts/validation.js" defer></script>
 
 </html>

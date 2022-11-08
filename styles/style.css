@@ -703,6 +703,7 @@ img header {
 }
 
 
+
 /*Pagina cursos*/
 /*Seccion de curso -- Pagina cursos*/
 
@@ -963,6 +964,30 @@ img header {
   letter-spacing: 1px;
   color: black;
   background:#028090;
+}
+
+/* Contador fecha*/
+
+#fecha {
+  line-height: 5em;
+  margin: 0 auto;      
+  text-align: center;
+  font-size: 1em;
+  color: #028090;
+}
+
+#desc{
+  font-family: 'DM Sans', sans-serif;
+  font: 15px;
+  color: rgb(87, 85, 85);
+  font-weight: bold;
+}
+
+#fechahrs{
+  font-family: 'DM Sans', sans-serif;
+  font: 10px;
+  color: rgb(107, 107, 107);
+  font-weight: bold;
 }
 
 /*Footer -- Pagina general*/
