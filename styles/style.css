@@ -928,6 +928,11 @@ img header {
   text-transform: uppercase;
 }
 
+h4 a{
+  color: var(--curtx-blue);
+  font-size: 1.2rem;
+}
+
 /*Pagina Login*/
 /*Seccion Login -- Pagina Login*/
 
