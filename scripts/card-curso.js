@@ -4,6 +4,8 @@ class myElement extends HTMLElement {
       super();
       //Asi podmeos ocupar el shadowDOM
       this.attachShadow({mode : "open"});
+
+      
     }
 
     static get observedAttributes(){
@@ -19,6 +21,8 @@ class myElement extends HTMLElement {
       if (oldVal !== newVal) {
         this[attr] = newVal
       }
+
+
   
     }
   
@@ -48,7 +52,7 @@ class myElement extends HTMLElement {
 
             <div class="compra_button_cursos">
                 <form class="form_compra_cursos">
-                    <button class="compra_curso_carrito_button">
+                    <button class="compra_curso_carrito_button" id="botonCompra">
                         <span><img src="${this.imagencarrito}" alt="carrito"></span>
                         <span>
                         Comprar
@@ -202,20 +206,6 @@ class myElement extends HTMLElement {
           .imagen--cursos img{
               width: 70%;
               height: auto;
-          }
-
-          .minatura{
-            background-color: white;
-          
-            position: absolute;
-            max-height: 10em;
-            max-width: 10em;
-          }
-        
-          .minatura img{
-            padding: 0.5em;
-            height: 10vh;
-            border: solid 3px;
           }
 
           @media (min-width: 600px) {
