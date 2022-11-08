@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 800px)">
   <script src="https://kit.fontawesome.com/75a3b76030.js" crossorigin="anonymous"></script>
   <script src="./scripts/menu.js" defer></script>
+  <script src="./scripts/validation-login.js" defer></script>
 </head>
 
 <body>
@@ -153,18 +154,18 @@
         <div class="contenedor_formulario">
 
           <!--Formulario de login-->
-          <form id="form_login" onsubmit="return validationlogin()" method="post">
-            <div class="input">
-              <span>Usuario</span>
-              <input type="text" name="usuario" />
+          <form id="form_login" method="post">
+            <div class="input" >
+              <span >Usuario</span>
+              <input type="text" name="usuario" id="usuarios"/>
             </div>
             <div class="input">
               <span>Contraseña</span>
-              <input type="password" name="contra" />
+              <input type="password" name="contra" id="contraseña"/>
             </div>
             <div class="input">
-              <button type="submit">
-                <span class=titulo_boton>Inicio sesión</span>
+              <button type="submit" id="login">
+                <span class="titulo_boton">Inicio sesión</span>
               </button>
             </div>
             <div class="alinearizq">
@@ -189,73 +190,79 @@
 
     <!--Pie de pagina mobile-->
     <div class="footer--general--mobile">
-      <div class="footer--button--general--idioma">
-        <button class="button-idioma--footer">
-          <i class="fa-solid fa-language"></i>
-          Español
-        </button>
-      </div>
-      <div class="redes--sociales--footer">
-        <div class="red--social--footer">
-          <a href="./error.html"><i class="fa-brands fa-facebook"></i></a>
+        <div class="footer--button--general--idioma">
+            <button class="button-idioma--footer">
+                <i class="fa-solid fa-language"></i>
+                Español
+            </button>
         </div>
-        <div class="red--social--footer">
-          <a href="./error.html"><i class="fa-brands fa-linkedin"></i></a>
+        <div class="redes--sociales--footer">
+            <div class="red--social--footer">
+                <a href="./error.html"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="red--social--footer">
+                <a href="./error.html"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="red--social--footer">
+                <a href="./error.html"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
         </div>
-        <div class="red--social--footer">
-          <a href="./error.html"><i class="fa-brands fa-whatsapp"></i></a>
+        <div class="footer--temas-privacidad">
+            <a href="./error.html">Cookies |</a>
+            <a href="./error.html"> Politica de privacidad </a>
+            <a href="./error.html">| Aviso legal</a>
         </div>
-      </div>
-      <div class="footer--temas-privacidad">
-        <a href="./error.html">Cookies |</a>
-        <a href="./error.html"> Politica de privacidad </a>
-        <a href="./error.html">| Aviso legal</a>
-      </div>
-      <p>@ 2022 Curtx, Inc</p>
+        <p>@ 2022 Curtx, Inc</p>
     </div>
 
     <!--Pie de pagina desktop-->
     <div class="footer--general--desktop">
-      <div class="lista--footer--desktop">
-        <ul>
-          <li><a href="./contacto.html">Contacto</a></li>
-          <li><a href="./error.html">Cursos</a></li>
-          <li><a href="./error.html">Centro de ayuda</a></li>
-        </ul>
-      </div>
-      <div class="lista--footer--desktop">
-        <ul>
-          <li><a href="./error.html">Linkedin</a></li>
-          <li><a href="./error.html">Facebook</a></li>
-          <li><a href="./error.html">Instagram</a></li>
-        </ul>
-      </div>
-      <div class="lista--footer--desktop">
-        <ul>
-          <li><a href="./error.html">Linkedin</a></li>
-          <li><a href="./error.html">Facebook</a></li>
-          <li><a href="./error.html">Instagram</a></li>
-        </ul>
-      </div>
-      <div class="lista--footer--desktop">
-        <ul>
-          <li><a href="./error.html">Linkedin</a></li>
-          <li><a href="./error.html">Facebook</a></li>
-          <li><a href="./error.html">Instagram</a></li>
-        </ul>
-      </div>
-      <div class="footer--button--general--idioma--desktop">
-        <button class="button-idioma--footer">
-          <i class="fa-solid fa-language"></i>
-          Español
-        </button>
-      </div>
+        <div class="lista--footer--desktop">
+            <ul>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./cursos.html">Cursos</a></li>
+                <li><a href="./error.html">Centro de ayuda</a></li>
+            </ul>
+        </div>
+        <div class="lista--footer--desktop">
+            <ul>
+                <li><a href="./error.html">Linkedin</a></li>
+                <li><a href="./error.html">Facebook</a></li>
+                <li><a href="./error.html">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="lista--footer--desktop">
+            <ul>
+                <li><a href="./error.html">Linkedin</a></li>
+                <li><a href="./error.html">Facebook</a></li>
+                <li><a href="./error.html">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="lista--footer--desktop">
+            <ul>
+                <li><a href="./error.html">Linkedin</a></li>
+                <li><a href="./error.html">Facebook</a></li>
+                <li><a href="./error.html">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer--button--general--idioma--desktop">
+            <button class="button-idioma--footer">
+                <i class="fa-solid fa-language"></i>
+                Español
+            </button>
+        </div>
+
+        <div class="container--logo--footer">
+            <a href="./index.html"><img src="./assets/icons/Curtx-blanco.png" alt="Logo de pagina"></a>
+        </div>
+
+        <div class="container--copyright--footer">
+            <p>@Copyright Curtx 2022</p>
+        </div>
 
     </div>
-  </footer>
+</footer>
 
 </body>
-<script src="./scripts/validation.js" defer></script>
-<script src="./scripts/my-elements.js"></script>
 
 </html>

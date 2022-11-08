@@ -7,7 +7,7 @@ class myElement extends HTMLElement {
     }
 
     static get observedAttributes(){
-      return ["title", "parrafo","discontprice",'oldprice','priceactual','img'];
+      return ["title", "parrafo","discontprice",'oldprice','priceactual','img','imagencarrito'];
     }
   
     //le asignamos a la variable title que obtenemos desde el observador de
@@ -49,7 +49,7 @@ class myElement extends HTMLElement {
             <div class="compra_button_cursos">
                 <form class="form_compra_cursos">
                     <button class="compra_curso_carrito_button">
-                        <span><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        <span><img src="${this.imagencarrito}" alt="carrito"></span>
                         <span>
                         Comprar
                         </span>
@@ -149,7 +149,7 @@ class myElement extends HTMLElement {
             display: flex;
             align-items: center;
             padding: 0 2.4rem 0 0;
-            margin-top: -0.4em;
+            justify-content: center;
             margin-left: calc(50% - 8.3em);
           }
           
@@ -157,11 +157,11 @@ class myElement extends HTMLElement {
             display: flex;
             border: none;
             background-color: transparent;
-          
+            align-items: center;
           }
           
           .compra_curso_carrito_button span{
-            font-size: 1.5rem;
+            
             padding-left: 0.5em;
             color: #ffffff;
           }
@@ -204,6 +204,20 @@ class myElement extends HTMLElement {
               height: auto;
           }
 
+          .minatura{
+            background-color: white;
+          
+            position: absolute;
+            max-height: 10em;
+            max-width: 10em;
+          }
+        
+          .minatura img{
+            padding: 0.5em;
+            height: 10vh;
+            border: solid 3px;
+          }
+
           @media (min-width: 600px) {
 
             /*Bloque de academia*/
@@ -214,15 +228,18 @@ class myElement extends HTMLElement {
         
         }
 
+        
+
 
        </style>
       `;
   
     }
-  
+
     //Por buenas practicas debemos tener tarea para cada circunstancia 
     render(){
       this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true));
+
     }
   
     connectedCallback() {
@@ -236,3 +253,5 @@ class myElement extends HTMLElement {
   
   //De esta forma costumizamos nuestro elemento
   customElements.define("card-curso", myElement);
+
+  

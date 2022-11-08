@@ -20,9 +20,25 @@
     <script src="https://kit.fontawesome.com/75a3b76030.js" crossorigin="anonymous"></script>
     <script src="./scripts/menu.js" defer></script>
     <script src="./scripts/card-curso.js" defer></script>
+    <script src="./scripts/contadores.js" defer></script>
 </head>
 
 <body>
+    <!--Bloque de contador-->
+    <div class="contador--ofertas" id="ofertas--contenedor">
+        <div class="oferta--imagen--texto">
+            <img src="./assets/imgs/buen-fin.png" alt="Buen fin oferta">
+            <p>Consigue 5 cursos por</p>
+            <span>$320</span>
+        </div>
+        <div id="fechahrs" class="contador--de--ofertas"></div>
+
+        <div class="boton--cerrar">
+            <span class="icon--cerrar--oferta" id="btn_cerrar_oferta">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+        </div>
+    </div>
 
     <!--Bloque barra lateral al apretar el menu-->
     <nav class="menu_mobile">
@@ -194,24 +210,78 @@
                     <!--Podemos ver como se ocupan web components para la generacion de cartas con diversas atributos eso hace que nuestros recursos sean menores-->
                     <card-curso title="Aprende Programación en C++" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
                     las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
-                        img="./assets/imgs/imagen-c++.png">
+                        img="./assets/imgs/imagen-c++.png" imagencarrito="./assets/icons/carrito-blanco.svg">
                     </card-curso>  
                        
                     <card-curso title="Aprende Programación en C++" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
                     las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
-                        img="./assets/imgs/imagen-c++.png">
+                        img="./assets/imgs/imagen-c++.png" imagencarrito="./assets/icons/carrito-blanco.svg">
                     </card-curso>
 
                     <card-curso title="Aprende Programación en C++" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
                     las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
-                        img="./assets/imgs/imagen-c++.png">
+                        img="./assets/imgs/imagen-c++.png" imagencarrito="./assets/icons/carrito-blanco.svg">
                     </card-curso>
 
                     <card-curso title="Aprende Programación en C++" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
                     las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
-                        img="./assets/imgs/imagen-c++.png">
+                        img="./assets/imgs/imagen-c++.png" imagencarrito="./assets/icons/carrito-blanco.svg">
                     </card-curso> 
 
+                    <card-curso title="Aprende Programación en C++" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
+                    las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
+                        img="./assets/imgs/imagen-c++.png" imagencarrito="./assets/icons/carrito-blanco.svg">
+                    </card-curso>  
+                       
+                    <card-curso title="Aprende Programación en C++" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
+                    las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
+                        img="./assets/imgs/imagen-c++.png" imagencarrito="./assets/icons/carrito-blanco.svg">
+                    </card-curso>
+
+                    <card-curso title="Aprende Programación en C++" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
+                    las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
+                        img="./assets/imgs/imagen-c++.png" imagencarrito="./assets/icons/carrito-blanco.svg">
+                    </card-curso>
+
+                    <card-curso title="Aprende Programación en C++" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
+                    las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
+                        img="./assets/imgs/imagen-c++.png" imagencarrito="./assets/icons/carrito-blanco.svg">
+                    </card-curso>  
+
+                </div>
+            </div>
+        </section>
+
+        <!--Empresas avaladas-->
+        <section class="empresas--contenedor">
+            <div class="imagenes--empresas--container--general">
+                <h2>Contamos con la confianza de más de 12.500 equipos excelentes</h2>
+                <p>Las principales empresas utilizan los mismos cursos para ayudar a los empleados a mantener al día sus habilidades.</p>
+                <div class="container--images--empresas">
+                    <div class="imagen--empresas">
+                        <i class="fa-brands fa-dhl"></i>
+                    </div>
+                    <div class="imagen--empresas">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="imagen--empresas">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="imagen--empresas">
+                        <i class="fa-brands fa-apple"></i>
+                    </div>
+                    <div class="imagen--empresas">
+                        <i class="fa-brands fa-linux"></i>
+                    </div>
+                    <div class="imagen--empresas">
+                        <i class="fa-brands fa-ubuntu"></i>
+                    </div>
+                    <div class="imagen--empresas">
+                        <i class="fa-brands fa-redhat"></i>
+                    </div>
+                    <div class="imagen--empresas">
+                        <i class="fa-brands fa-suse"></i>
+                    </div>
                 </div>
             </div>
         </section>
@@ -302,7 +372,7 @@
             <div class="lista--footer--desktop">
                 <ul>
                     <li><a href="./contacto.html">Contacto</a></li>
-                    <li><a href="./error.html">Cursos</a></li>
+                    <li><a href="./cursos.html">Cursos</a></li>
                     <li><a href="./error.html">Centro de ayuda</a></li>
                 </ul>
             </div>

@@ -273,6 +273,15 @@ html {
     
 }
 
+/*Bloque de imagenes - Seccion imagenes*/
+
+.empresas--contenedor{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
 /*Categorias principales - Pagina categorias*/
 
 .categorias--principales{

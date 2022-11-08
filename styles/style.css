@@ -32,6 +32,62 @@ html {
   display: flex;
 }
 
+/*Contador -- Reloj contador*/
+
+.contador--ofertas{
+  height: 7vh;
+  background-color:#161616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+
+.oferta--imagen--texto{
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.oferta--imagen--texto img{
+  width: 11em;
+}
+
+.contador--de--ofertas{
+  width: 20%;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--white);
+}
+
+.oferta--imagen--texto p{
+  font-size: 1.3rem;
+  justify-content: end;
+  font-weight: bold;
+  text-align: end;
+}
+
+.oferta--imagen--texto span{
+  font-size: 1.5rem;
+  padding-left: 0.5em;
+
+}
+
+.icon--cerrar--oferta{
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  line-height: 1.0em;
+  margin-left: auto;
+  float: right;
+}
+
+.ocultar{
+  transition: all 1s;
+  display: none;
+}
 
 /*Header -- Seccion General*/
 
@@ -525,6 +581,48 @@ img header {
     height: auto;
 }
 
+/*Cursos posibles imagenes -- Seccion imegenes empresa -- Pagina home*/
+
+.empresas--contenedor{
+  background-color: #f7f9fa;
+  
+}
+
+.imagenes--empresas--container--general{
+  width: 100%;
+  align-self: center;
+  max-width: 90em;
+  text-align: center;
+}
+
+.empresas--contenedor h2{
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 3.4rem;
+  color: #201E1C;
+  padding: 0.5em;
+}
+
+.empresas--contenedor p{
+  font-size: 1.3rem;
+  padding: 0.5em;
+}
+
+
+.container--images--empresas{
+  padding: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imagen--empresas{
+  font-size: 2rem;
+  color: #a7aaad;
+  width: 10%;
+}
+
+
 /*Cursos categorias principales -- Seccion Categorias -- Pagina home*/
 
 .categorias--principales{
@@ -612,10 +710,11 @@ img header {
 /*Seccion Contacto -- Pagina Contacto*/
 
 .contactame--nosotros{
+    
     position: relative;
     width: 100%;
     min-width: 32em;
-    height: auto;
+    height: 80vh;
     padding: 2em;
 }
 
@@ -892,13 +991,21 @@ img header {
   float: right;
 }
 
-.input button{
+.input button, .input1 button{
+  background-color: transparent;
+  border-radius: 1em;
+  padding: 0.6em 2em;
+  color: var(--curtx-blue);
+  font-size: 1.5rem;
+  border: 0.1em solid var(--curtx-blue);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   width: 100%;
-  padding: 12px 20px;
-  font-size: 1em;
-  letter-spacing: 1px;
-  color: black;
-  background: #028090;
+}
+
+.input button:hover, .input1 button:hover{
+  background-color: var(--curtx-blue);
+  color: var(--white);
+  transition: all 1s;
 }
 
 /*Pagina Resgitro*/
@@ -957,15 +1064,6 @@ img header {
   letter-spacing: 1px;
 }
 
-.input1 button{
-  width: 100%;
-  padding: 12px 20px;
-  font-size: 1em;
-  letter-spacing: 1px;
-  color: black;
-  background:#028090;
-}
-
 /* Contador fecha*/
 
 #fecha {
@@ -983,12 +1081,6 @@ img header {
   font-weight: bold;
 }
 
-#fechahrs{
-  font-family: 'DM Sans', sans-serif;
-  font: 10px;
-  color: rgb(107, 107, 107);
-  font-weight: bold;
-}
 
 /*Footer -- Pagina general*/
 
