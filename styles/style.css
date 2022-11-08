@@ -1087,6 +1087,17 @@ h4 a{
 }
 
 
+/*Pagina carrito*/
+/*Seccion carrito -- Pagina carrito*/
+
+.carrtitle{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  color:  #05668D;
+  font-weight: bold;
+  padding: 1em;
+}
+
 /*Footer -- Pagina general*/
 
 footer{

@@ -141,9 +141,27 @@
     </header>
 
     <!--Contenido principal-->
-        <h1>Carrito de compras</h1>
-        <hr>
-
+    <h1 class="carrtitle">Carrito</h1>
+    <hr>
+    <div class="container">
+        
+        <div class="row">
+            <!-- Elementos generados a partir del JSON -->
+            <main id="items" class="col-sm-8 row"></main>
+            <!-- Carrito -->
+            <aside class="col-sm-4">
+                <br>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <br>
+                <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span> $</p>
+                <br>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+            </aside>
+        </div>
+    </div>
    <!--Pie de pagina general-->
    <footer>
 
@@ -223,5 +241,6 @@
 </footer>
 
 </body>
+<script src="./scripts/carrito.js"></script>
 
 </html>
