@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 800px)">
     <script src="https://kit.fontawesome.com/75a3b76030.js" crossorigin="anonymous"></script>
     <script src="./scripts/menu.js" defer></script>
+    <script src="./scripts/card-curso.js" defer></script>
 </head>
 
 <body>
@@ -190,165 +191,27 @@
                 <div class="container-cursos wrap">
 
                     <!--Contendeor de cada carta curso-->
-                    <div class="card--curso">
-                        <div class="card--curso--top">
-                            <a href="./error.html"><img src="./assets/imgs/imagen-c++.png" alt="Iamgen curso1"></a>
-                            <div class="card--curso--body">
-                                <h2>Aprende Programación en C++</h2>
-                                <p>Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
-                                    las bases hasta lo avanzado en C++
-                                </p>
-                            </div>
-                        </div>
+                    <!--Podemos ver como se ocupan web components para la generacion de cartas con diversas atributos eso hace que nuestros recursos sean menores-->
+                    <card-curso title="Aprende Programación en C++" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
+                    las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
+                        img="./assets/imgs/imagen-c++.png">
+                    </card-curso>  
+                       
+                    <card-curso title="Aprende Programación en C++" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
+                    las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
+                        img="./assets/imgs/imagen-c++.png">
+                    </card-curso>
 
-                        <div class="card--curso--bottom">
-                            <div class="precio--descuento--curso">
-                                <div class="price_descount">
-                                    <span>66% Dto.</span>
-                                </div>
+                    <card-curso title="Aprende Programación en C++" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
+                    las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
+                        img="./assets/imgs/imagen-c++.png">
+                    </card-curso>
 
-                                <div class="price_old">
-                                    <span>$999 MXN</span>
-                                </div>
-                            </div>
+                    <card-curso title="Aprende Programación en C++" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
+                    las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
+                        img="./assets/imgs/imagen-c++.png">
+                    </card-curso> 
 
-                            <div class="compra_button_cursos">
-                                <form class="form_compra_cursos">
-                                    <button class="compra_curso_carrito_button">
-                                        <span><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
-                                        <span>
-                                            Comprar
-                                        </span>
-                                        <span>
-                                            $299 MXN
-                                        </span>
-                                    </button>
-                                </form>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="card--curso">
-
-                        <div class="card--curso--top">
-                            <a href="./error.html"><img src="./assets/imgs/imagen-c++.png" alt="Iamgen curso1"></a>
-                            <div class="card--curso--body">
-                                <h2>Aprende Programación en C++</h2>
-                                <p>Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
-                                    las bases hasta lo avanzado en C++
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card--curso--bottom">
-                            <div class="precio--descuento--curso">
-                                <div class="price_descount">
-                                    <span>66% Dto.</span>
-                                </div>
-
-                                <div class="price_old">
-                                    <span>$999 MXN</span>
-                                </div>
-                            </div>
-
-                            <div class="compra_button_cursos">
-                                <form class="form_compra_cursos">
-                                    <button class="compra_curso_carrito_button">
-                                        <span><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
-                                        <span>
-                                            Comprar
-                                        </span>
-                                        <span>
-                                            $299 MXN
-                                        </span>
-                                    </button>
-                                </form>
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-                    <div class="card--curso">
-
-                        <div class="card--curso--top">
-                            <a href="./error.html"><img src="./assets/imgs/imagen-c++.png" alt="Iamgen curso1"></a>
-                            <div class="card--curso--body">
-                                <h2>Aprende Programación en C++</h2>
-                                <p>Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
-                                    las bases hasta lo avanzado en C++
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card--curso--bottom">
-                            <div class="precio--descuento--curso">
-                                <div class="price_descount">
-                                    <span>66% Dto.</span>
-                                </div>
-
-                                <div class="price_old">
-                                    <span>$999 MXN</span>
-                                </div>
-                            </div>
-
-                            <div class="compra_button_cursos">
-                                <form class="form_compra_cursos">
-                                    <button class="compra_curso_carrito_button">
-                                        <span><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
-                                        <span>
-                                            Comprar
-                                        </span>
-                                        <span>
-                                            $299 MXN
-                                        </span>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card--curso">
-
-                        <div class="card--curso--top">
-                            <a href="./error.html"><img src="./assets/imgs/imagen-c++.png" alt="Iamgen curso1"></a>
-                            <div class="card--curso--body">
-                                <h2>Aprende Programación en C++</h2>
-                                <p>Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
-                                    las bases hasta lo avanzado en C++
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card--curso--bottom">
-                            <div class="precio--descuento--curso">
-                                <div class="price_descount">
-                                    <span>66% Dto.</span>
-                                </div>
-
-                                <div class="price_old">
-                                    <span>$999 MXN</span>
-                                </div>
-                            </div>
-
-                            <div class="compra_button_cursos">
-                                <form class="form_compra_cursos">
-                                    <button class="compra_curso_carrito_button">
-                                        <span><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
-                                        <span>
-                                            Comprar
-                                        </span>
-                                        <span>
-                                            $299 MXN
-                                        </span>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
