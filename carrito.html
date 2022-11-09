@@ -9,7 +9,7 @@
     <meta name="author" content="Jorge Betancourt Gonzalez, Karina Joanna">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index,follow" />
-    <title>Error 404</title>
+    <title>Carrito de compras</title>
     <link href="./assets/icons/logo-azul.png" rel="icon">
     <link
         href=“https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap”
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 800px)">
     <script src="https://kit.fontawesome.com/75a3b76030.js" crossorigin="anonymous"></script>
     <script src="./scripts/menu.js" defer></script>
+    <script src="./scripts/carrito.js" defer></script>
     <script src="./scripts/popups.js" defer></script>
 </head>
 
@@ -142,21 +143,27 @@
     </header>
 
     <!--Contenido principal-->
-    <main class="" id="main">
-        <!--Contendor de error-->
-        <div class="container--error">
-            <h2 class="title--error">
-                <span class="title-word--error title-word-1">ERROR</span>
-                <span class="title-word--error title-word-2">404</span>
-            </h2>
-            <img src="assets/imgs/rocket.gif" alt="error" width="300" height="300">
-            <h2>OOPS...Página no encontrada!</h2>
-
-            <h4><a href="index.html" onmouseover="window.location=this.href">Regresar al menu principal</a></h4>
+    <h1 class="carrtitle">Carrito</h1>
+    <hr>
+    <div class="contenedor--carrito">
+        
+        <div class="row">
+            <!-- Elementos generados con JSON -->
+            <main id="items" class="col-sm-8 row"></main>
+            <!-- Carrito -->
+            <aside class="col-sm-4">
+                <br>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <br>
+                <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span> $</p>
+                <br>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+            </aside>
         </div>
-
-    </main>
-
+    </div>
    <!--Pie de pagina general-->
    <footer>
 
@@ -236,5 +243,6 @@
 </footer>
 
 </body>
+<script src="./scripts/carrito.js"></script>
 
 </html>
