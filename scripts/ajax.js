@@ -3,7 +3,12 @@ const btnCargar = document.querySelector('#registro');
 btnCargar.addEventListener('click', cargarContenidoAjax);
 
 function cargarContenidoAjax(){
+
+    //crear nuestro xmlhttprequest
+
     var xhr = new XMLHttpRequest();
+
+    //abrir la conexion
 
     xhr.open('GET', 'texto.txt', true);
     xhr.onreadystatechange = function(){
