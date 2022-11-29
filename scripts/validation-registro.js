@@ -49,6 +49,6 @@ buttonRegistro.addEventListener('click',(event) =>{
 
     }
 
-    window.location="index.html";
+    //window.location="index.html";
     event.preventDefault(); 
 });

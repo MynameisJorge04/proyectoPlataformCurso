@@ -1,4 +1,6 @@
-var btnCargar = document.getElementById('registro');
+const btnCargar = document.querySelector('#registro');
+
+btnCargar.addEventListener('click', cargarContenidoAjax);
 
 function cargarContenidoAjax(){
     var xhr = new XMLHttpRequest();
@@ -7,7 +9,7 @@ function cargarContenidoAjax(){
     xhr.onreadystatechange = function(){
         console.log(xhr.readyState);
         if(xhr.readyState == 4 && xhr.status == 200){
-            var contenido = document.getElementById('contenido');
+            var contenido = document.getElementById('contenido--ajax');
             contenido.innerHTML = xhr.responseText;
         }
     }
@@ -15,5 +17,3 @@ function cargarContenidoAjax(){
     xhr.send();
 
 }
-
-btnCargar.addEventListener('click', cargarContenidoAjax);
